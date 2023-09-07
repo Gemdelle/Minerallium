@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    color-scheme: light;
+    color: CanvasText;
+    background-color: Canvas;
+}
+
+#app {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+    user-select: none;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.display-container {
+    width: 100%;
+    position: relative;
+}
+
+#display {
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+}
+
+.lang-button-container{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.toggle-btn {
+    width: 50px;
+    height: 30px;
+    background-color: #766161;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    border: 3px solid black;
+    box-sizing: content-box;
+}
+
+/* Estilo para el estado inicial (apagado) */
+.toggle-btn .toggle-circle {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+}
+
+/* Estilo para el estado encendido */
+.toggle-btn.active .toggle-circle {
+    left: 20px;
+}
+
+#skip {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.skipButton {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(96, 240, 243);
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    gap: 4px;
+}
+
+.element {
+    position: relative;
+
+    width: 5vw;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    background-color: grey;
+    border: 2px solid black;
+}
+
+.row-number {
+    background-color: rgb(244, 180, 84);
+}
+
+.atomic-number {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.special-element {
+    margin-right: auto;
+}
+
+.special-cell {
+    background-color: rgb(238, 245, 147);
+}
+
+.special-row {
+    justify-content: end;
+}
+
+.shake-x {
+    animation: shakeX 0.5s 2;
+    border-color: red;
+}
+
+@media (min-width: 1440px) {
+    .element {
+        width: 5.2vw;
+    }
+}
+
+@keyframes shakeX {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
