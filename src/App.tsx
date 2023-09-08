@@ -1,10 +1,8 @@
 import React from 'react';
-import './App.css';
 import {Route, Routes} from 'react-router-dom';
-import Home from "./ui/components/Home";
-import NoMatch from "./ui/components/NoMatch";
-import Catalog from "./ui/components/Catalog";
-import Game from "./ui/components/Game";
+import Home from "./ui/pages/Home";
+import NoMatch from "./ui/pages/NoMatch";
+import Game from "./ui/pages/Game";
 
 function App() {
     return (

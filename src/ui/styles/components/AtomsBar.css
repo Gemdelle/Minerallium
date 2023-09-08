@@ -1,0 +1,7 @@
+.atoms-bar {
+  width: 100%;
+  background-color: violet;
+
+  display: flex;
+  justify-content: space-around;
+}

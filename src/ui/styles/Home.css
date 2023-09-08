@@ -38,6 +38,16 @@ video {
     z-index: 1;
     text-decoration: none;
     font-family: 'Abyssinica SIL', serif;
+    margin-right: 5vw;
+    margin-top: -5vh;
+    transition: all 700ms;
+    scale: 100%;
+}
+
+.start-game:hover {
+    scale: 106%;
+    text-shadow: 2px 2px 25px rgb(239, 221, 201);
+    color: rgb(255, 255, 255);
 }
 
 .home-container {
