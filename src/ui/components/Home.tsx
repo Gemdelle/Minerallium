@@ -5,11 +5,14 @@ import '../styles/Home.css';
 
 const Home: React.FC = () => {
     return (
-        <div className="home-container">
-            <Link
-                to={`/catalog`}
-                className="start-game"
-            >Start Game</Link>
+        <div className='home-container'>
+            <div className='options'>
+                <div className='title'></div>
+                <Link
+                    to={`/catalog`}
+                    className="start-game"
+                >Start Game</Link>
+            </div>
             <LoopingVideo/>
         </div>
     );

@@ -11,15 +11,36 @@ video {
     height: 100%;
 }
 
-.start-game {
+.options {
+    right: 5vw;
+    top: 5vh;
     position: absolute;
+    height: auto;
+    width: auto;
+    z-index: 999;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.title {
+    height: 15vw;
+    width: 50vw;
+    background-image: url('/public/images/game-name.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.start-game {
     color: white;
-    font-size: 14vh;
+    font-size: 9vh;
     z-index: 1;
+    text-decoration: none;
+    font-family: 'La Belle Aurore', cursive;
 }
 
 .home-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    width: 100%;
+    height: 100%;
 }
