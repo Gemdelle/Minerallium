@@ -33,11 +33,11 @@ video {
 }
 
 .start-game {
-    color: white;
-    font-size: 9vh;
+    color: rgb(239, 221, 201);
+    font-size: 7vh;
     z-index: 1;
     text-decoration: none;
-    font-family: 'La Belle Aurore', cursive;
+    font-family: 'Abyssinica SIL', serif;
 }
 
 .home-container {
