@@ -16,13 +16,13 @@ export default function TimeBar({ time }: { time: number}) {
 
           // setTimeout para compensar el delay de la anim. de css fluidez
           setTimeout(() => {
-            // alert("TERMINO EL TIEMPO")
+            // alert("TERMINO EL TIEMPO")-
           }, 200)
-          
+
         } else {
           setWidth((prevWidth) => prevWidth - 1);
         }
-      }, time/100); 
+      }, time/100);
     };
 
     startTimer();
@@ -33,10 +33,11 @@ export default function TimeBar({ time }: { time: number}) {
   }, [width, time]);
 
   return (
-    <div className='bar-background'>
+    <div className='timer-header'>
       <div className="time-bar">
         <div className="progress" style={{ width: width + '%'}}></div>
       </div>
+      <img className="bg-image" src='/images/time-bar.png' alt="time bar Background"/>
     </div>
   )
 }

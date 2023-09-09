@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
-import '../styles/Game.css';
+import React from 'react';
+import '../styles/pages/Game.css';
 
 import TimeBar from "../components/TimeBar"
 import Marquee from "../components/Marquee"
@@ -14,15 +13,15 @@ import levelsConfig from '../../core/data/levels-config';
 const Game: React.FC = () => {
     return (
         <div className="home-container">
-            <div> 
+            <div>
                 <TimeBar time={10000} /> {/* tiempo en milisegundos */}
-                
+
                 <Formula formula={compounds[2].formula} />
-                
-                <Graphic activeComponent={compounds[2]} /> 
+
+                <Graphic activeComponent={compounds[2]} />
 
                 <div className="atom-container"></div>
-                
+
                 <LevelBar levels={levelsConfig} />
 
                 <Marquee>
