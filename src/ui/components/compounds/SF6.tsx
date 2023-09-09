@@ -3,7 +3,11 @@ import "../../styles/components/Graphic.css"
 
 export default function SF6({ compound }:any) {
   return (
-    <img src='/images/1/SF6.png' alt="" />
+    <div className='graphic-container SF6'>
+      <div className='element e1'></div>
+      <div className='element e2'></div>
+      <div className='element e3'></div>
+    </div>
     
   )
 }

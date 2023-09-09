@@ -16,9 +16,9 @@ const Game: React.FC = () => {
             <div>
                 <TimeBar time={10000} /> {/* tiempo en milisegundos */}
 
-                <Formula formula={compounds[2].formula} />
+                <Formula formula={compounds[9].formula} />
 
-                <Graphic activeComponent={compounds[2]} />
+                <Graphic activeComponent={compounds[9]} />
 
                 <div className="atom-container"></div>
 

@@ -1,11 +1,165 @@
-img {
-  height: 100%;
-  width: 100%;
-}
-
 .compound-container {
   margin: 0 auto;
   height: 40vw;
   width: 40vw;
   margin-top: -12vw;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.graphic-container {
+  position: relative;
+  height: 55vw;
+  width: 55vw;
+  background-size: contain;
+  background-position: center;
+  right: 7.5vw;
+  bottom: 7vw;
+  z-index: -10;
+}
+
+.element {
+  width: 8vw;
+  height: 8vw;
+  background-image: url(/public/images/hidden-element.png);
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  position: absolute;
+  animation: rotate 25s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.e1 {
+  left: 15vw;
+  top: 24vw;
+}
+
+.e2 {
+  left: 23.8vw;
+  top: 24vw;
+}
+
+.e3 {
+  left: 33vw;
+  top: 24vw;
+}
+
+.e4 {
+  left: 16vw;
+  top: 30vw;
+}
+
+.e5 {
+  left: 23.8vw;
+  top: 15vw;
+}
+
+.e6 {
+  left: 32vw;
+  top: 30vw;
+}
+
+.e7 {
+  left: 23.8vw;
+  top: 15.5vw;
+}
+
+.e8 {
+  left: 23.8vw;
+  top: 33vw;
+}
+
+/* BACKGROUNDS */
+
+.SCl2 {
+  background-image: url("/public/images/1/SCl2.png");
+}
+
+.BF3 {
+  background-image: url("/public/images/1/BF3.png");
+}
+
+.BeH2 {
+  background-image: url("/public/images/1/BeH2.png");
+}
+
+.PBr3 {
+  background-image: url("/public/images/1/PBr3.png");
+}
+
+.Cl2O {
+  background-image: url("/public/images/1/Cl2O.png");
+}
+
+.XeF4 {
+  background-image: url("/public/images/1/XeF4.png");
+}
+
+.CHCl3 {
+  background-image: url("/public/images/2/CHCl3.png");
+}
+
+.PF5 {
+  background-image: url("/public/images/2/PF5.png");
+}
+
+.C2HCl {
+  background-image: url("/public/images/2/C2HCl.png");
+}
+
+.COCl2 {
+  background-image: url("/public/images/2/COCl2.png");
+}
+
+.CH3Br {
+  background-image: url("/public/images/2/CH3Br.png");
+}
+
+.CCl2F2 {
+  background-image: url("/public/images/2/CCl2F2.png");
+}
+
+.SF6 {
+  background-image: url("/public/images/3/SF6.png");
+}
+
+.CH3OCH3 {
+  background-image: url("/public/images/3/CH3OCH3.png");
+}
+
+.C6H6 {
+  background-image: url("/public/images/3/C6H6.png");
+}
+
+.C2H6 {
+  background-image: url("/public/images/3/C2H6.png");
+}
+
+.HCOOH {
+  background-image: url("/public/images/3/HCOOH.png");
+}
+
+.CH3COOH {
+  background-image: url("/public/images/3/CH3COOH.png");
+}
+
+.H2SO4 {
+  background-image: url("/public/images/3/H2SO4.png");
+}
+
+.CH3CH2OH {
+  background-image: url("/public/images/3/CH3CH2OH.png");
 }

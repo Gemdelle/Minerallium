@@ -3,7 +3,11 @@ import "../../styles/components/Graphic.css"
 
 export default function SCl2({ compound }:any) {
   return (
-    <img src='/images/1/SCl2.png' alt="" />
+    <div className='graphic-container SCl2'>
+      <div className='element e1'></div>
+      <div className='element e2'></div>
+      <div className='element e3'></div>
+    </div>
     
   )
 }

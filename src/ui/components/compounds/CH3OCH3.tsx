@@ -3,7 +3,11 @@ import "../../styles/components/Graphic.css"
 
 export default function CH3OCH3({ compound }:any) {
   return (
-    <img src='/images/1/CH3OCH3.png' alt="" />
+    <div className='graphic-container CH3OCH3'>
+      <div className='element e1'></div>
+      <div className='element e2'></div>
+      <div className='element e3'></div>
+    </div>
     
   )
 }

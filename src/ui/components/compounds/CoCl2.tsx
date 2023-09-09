@@ -1,9 +1,13 @@
 import React from 'react'
 import "../../styles/components/Graphic.css"
 
-export default function CoCl2({ compound }:any) {
+export default function COCl2({ compound }:any) {
   return (
-    <img src='/images/1/CoCl2.png' alt="" />
+    <div className='graphic-container COCl2'>
+      <div className='element e1'></div>
+      <div className='element e2'></div>
+      <div className='element e3'></div>
+    </div>
     
   )
 }
