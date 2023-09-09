@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import "../styles/components/TimeBar.css"
 
 export default function TimeBar({ time }: { time: number}) {
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(100);
 
   // Iniciamos el contador cuando se muestra el componente
   useEffect(() => {
@@ -11,16 +11,16 @@ export default function TimeBar({ time }: { time: number}) {
     const startTimer = () => {
       timerInterval = setInterval(() => {
         // Cuando el width llega a 100%, se acaba el tiempo y limpiamos el contador
-        if (width >= 100) {
+        if (width <= 0) {
           clearInterval(timerInterval);
 
           // setTimeout para compensar el delay de la anim. de css fluidez
           setTimeout(() => {
-            alert("TERMINO EL TIEMPO")
+            // alert("TERMINO EL TIEMPO")
           }, 200)
           
         } else {
-          setWidth((prevWidth) => prevWidth + 1);
+          setWidth((prevWidth) => prevWidth - 1);
         }
       }, time/100); 
     };
@@ -33,8 +33,10 @@ export default function TimeBar({ time }: { time: number}) {
   }, [width, time]);
 
   return (
-    <div className="time-bar" >
-      <div className="progress" style={{ width: width + '%'}}></div>
+    <div className='bar-background'>
+      <div className="time-bar">
+        <div className="progress" style={{ width: width + '%'}}></div>
+      </div>
     </div>
   )
 }

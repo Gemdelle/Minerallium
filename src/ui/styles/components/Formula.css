@@ -1,0 +1,23 @@
+.formula {
+  height: 22vh;
+  width: 27vw;
+  background-image: url(/public/images/formula.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+  margin: 0 auto;
+  margin-top: 2vw;
+
+  display: flex;
+  justify-content: center;
+}
+
+.formula-text {
+  display: flex;
+  margin-top: 1.9vw;
+  color: wheat;
+  font-size: larger;
+  height: 50%;
+}

@@ -9,8 +9,8 @@ export default function AtomsBar() {
   return (
     <div className="atoms-bar">
       {
-        testAtomsMock.map((atom) => {
-          return <AtomItem atom={atom}/>
+        testAtomsMock.map((atom, index) => {
+          return <AtomItem atom={atom} key={index}/>
         })
       }
     </div>

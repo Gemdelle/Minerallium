@@ -1,0 +1,11 @@
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.compound-container {
+  margin: 0 auto;
+  height: 40vw;
+  width: 40vw;
+  margin-top: -12vw;
+}

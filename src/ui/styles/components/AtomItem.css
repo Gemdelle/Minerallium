@@ -1,11 +1,17 @@
 .atom {
-  background-color: grey;
-  width: 60px;
-  height: 60px;
-
+  width: 12vw;
+  height: 12vw;
   margin: 15px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-image: url('/public/images/element-option.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  color: antiquewhite;
+  font-size: 1.5vw;
 }
