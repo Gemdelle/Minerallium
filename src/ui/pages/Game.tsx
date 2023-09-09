@@ -35,7 +35,7 @@ const changeCurrentLevel : any = (previousLevels: any) => {
 }
 
 function getRandomCompoundFrom(compounds: any): any {
-       const randomIndex = Math.floor(Math.random() * (compounds.length - 1 + 1));
+       const randomIndex = Math.floor(Math.random() * (compounds.length - 0 + 1));
     return compounds[randomIndex];
 }
 
