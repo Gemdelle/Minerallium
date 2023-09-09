@@ -1,13 +1,13 @@
-import { useState, useEffect } from 'react'
+import {useState, useEffect} from 'react'
 import "../styles/components/TimeBar.css"
 
-export default function TimeBar({ time }: { time: number}) {
+export default function TimeBar({ time, speed }: { time: number, speed: number}) {
   const [width, setWidth] = useState(100);
+  const interval = time / speed;
 
   // Iniciamos el contador cuando se muestra el componente
   useEffect(() => {
     let timerInterval: NodeJS.Timer;
-
     const startTimer = () => {
       timerInterval = setInterval(() => {
         // Cuando el width llega a 100%, se acaba el tiempo y limpiamos el contador
@@ -22,7 +22,7 @@ export default function TimeBar({ time }: { time: number}) {
         } else {
           setWidth((prevWidth) => prevWidth - 1);
         }
-      }, time/100);
+      }, interval);
     };
 
     startTimer();
@@ -30,7 +30,13 @@ export default function TimeBar({ time }: { time: number}) {
     return () => {
       clearInterval(timerInterval);
     };
-  }, [width, time]);
+  }, [width, time, interval]);
+
+  useEffect(() => {
+    setWidth(100);
+    return () => {};
+  }, [interval]);
+
 
   return (
     <div className='timer-header'>

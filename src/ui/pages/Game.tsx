@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import '../styles/pages/Game.css';
 
 import TimeBar from "../components/TimeBar"
@@ -9,20 +9,55 @@ import compounds from '../../core/data/compounds';
 import Graphic from '../components/Graphic';
 import LevelBar from '../components/LevelBar';
 import levelsConfig from '../../core/data/levels-config';
+import LevelStatus from "../../core/levels/LevelStatus";
+
+
+const changeCurrentLevel : any = (previousLevels: any) => {
+    const copyOfLevels: any[] = [...previousLevels]
+    let firstUnReachedLevelIndex = copyOfLevels.findIndex((level: any) => {
+        return level.status === LevelStatus.UNREACHED
+    })
+    let previousLevelIndex = firstUnReachedLevelIndex -1
+
+    if ( copyOfLevels[previousLevelIndex] ){
+        copyOfLevels[previousLevelIndex] = {
+            ...copyOfLevels[previousLevelIndex],
+            status: LevelStatus.REACHED
+        }
+    }
+
+    copyOfLevels[firstUnReachedLevelIndex] = {
+        ...copyOfLevels[firstUnReachedLevelIndex],
+        status: LevelStatus.ACTIVE
+    }
+
+    return copyOfLevels
+}
 
 const Game: React.FC = () => {
+    const [levels, setlevels] = useState(levelsConfig);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setlevels((prevLevels) => changeCurrentLevel(prevLevels));
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, []);
+
+
+    let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
     return (
         <div className="home-container">
             <div>
-                <TimeBar time={10000} /> {/* tiempo en milisegundos */}
+                <TimeBar time={10000} speed={currentLevel!.speed} /> {/* tiempo en milisegundos */}
 
-                <Formula formula={compounds[2].formula} />
+                <Formula formula={compounds[9].formula} />
 
-                <Graphic activeComponent={compounds[2]} />
+                <Graphic activeComponent={compounds[9]} />
 
                 <div className="atom-container"></div>
 
-                <LevelBar levels={levelsConfig} />
+                <LevelBar levels={levels} />
 
                 <Marquee>
                     <AtomsBar />

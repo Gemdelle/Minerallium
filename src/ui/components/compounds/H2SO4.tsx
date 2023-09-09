@@ -3,7 +3,11 @@ import "../../styles/components/Graphic.css"
 
 export default function H2SO4({ compound }:any) {
   return (
-    <img src='/images/1/H2SO4.png' alt="" />
+    <div className='graphic-container H2SO4'>
+      <div className='element e1'></div>
+      <div className='element e2'></div>
+      <div className='element e3'></div>
+    </div>
     
   )
 }
