@@ -127,6 +127,184 @@ img {
   top: 32vw;
 }
 
+
+.CH3CH2OH .e1 {
+  top: 23.3vw;
+  left: 10vw;
+}
+
+.CH3CH2OH .e2 {
+  top: 23.3vw;
+  left: 18.5vw;
+}
+
+.CH3CH2OH .e3 {
+  top: 23.3vw;
+  left: 25.0vw;
+}
+
+.CH3CH2OH .e4 {
+  top: 23.3vw;
+  left: 33.5vw;
+}
+
+.CH3CH2OH .e5 {
+  top: 15.6vw;
+  left: 18.5vw;
+}
+
+.CH3CH2OH .e6 {
+  top: 31vw;
+  left: 18.5vw;
+}
+
+.CH3CH2OH .e7 {
+  top: 15.6vw;
+  left: 25vw;
+}
+
+.CH3CH2OH .e8 {
+  top: 31vw;
+  left: 25vw;
+}
+
+.H2SO4 .e1 {
+  top: 23vw;
+  left: 15.5vw;
+}
+
+.H2SO4 .e2 {
+  top: 23vw;
+  left: 23.8vw;
+}
+
+.H2SO4 .e3 {
+  top: 23vw;
+  left: 32.3vw;
+}
+
+.H2SO4 .e4 {
+  top: 15vw;
+  left: 23.8vw;
+}
+
+.H2SO4 .e5 {
+  top: 31.2vw;
+  left: 23.8vw;
+}
+
+.H2SO4 .e6 {
+  top: 15vw;
+  left: 32.3vw;
+}
+
+.H2SO4 .e7 {
+  top: 31.2vw;
+  left: 15.5vw;
+}
+
+.CH3COOH .e1 {
+  top: 16vw;
+  left: 20vw;
+}
+
+.CH3COOH .e2 {
+  top: 30.6vw;
+  left: 20vw;
+}
+
+.CH3COOH .e3 {
+  top: 23.3vw;
+  left: 12.5vw;
+}
+
+.CH3COOH .e4 {
+  top: 23.3vw;
+  left: 35.5vw;
+}
+
+.CH3COOH .e5 {
+  top: 23.3vw;
+  left: 20vw;
+}
+
+.CH3COOH .e6 {
+  top: 16vw;
+  left: 28vw;
+}
+
+.CH3COOH .e7 {
+  top: 23.3vw;
+  left: 28vw;
+}
+
+.HCOOH .e1 {
+  top: 26vw;
+  left: 15vw;
+}
+
+.HCOOH .e2 {
+  top: 16vw;
+  left: 21.5vw;
+}
+
+.HCOOH .e3 {
+  top: 24vw;
+  left: 21.5vw;
+}
+
+.HCOOH .e4 {
+  top: 26vw;
+  left: 27.9vw;
+}
+
+.HCOOH .e5 {
+  top: 22.7vw;
+  left: 34vw;
+}
+
+.C2H6 .e1 {
+  top: 23.4vw;
+  left: 13vw;
+}
+
+.C2H6 .e2 {
+  top: 16vw;
+  left: 20vw;
+}
+
+.C2H6 .e3 {
+  top: 16vw;
+  left: 27.5vw;
+}
+
+.C2H6 .e4 {
+  top: 23.4vw;
+  left: 27.5vw;
+}
+
+.C2H6 .e5 {
+  top: 23.4vw;
+  left: 20vw;
+}
+
+.C2H6 .e6 {
+  top: 23.4vw;
+  left: 34.5vw;
+}
+
+.C2H6 .e7 {
+  top: 31vw;
+  left: 20vw;
+}
+
+.C2H6 .e8 {
+  top: 31vw;
+  left: 27.5vw;
+}
+
+
+
 /* BACKGROUNDS */
 
 .SCl2 {
@@ -208,3 +386,5 @@ img {
 .CH3CH2OH {
   background-image: url("/public/images/3/CH3CH2OH.png");
 }
+
+

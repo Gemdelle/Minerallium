@@ -8,6 +8,5 @@ export default function C6H6({ compound }:any) {
       <div className='element e2'></div>
       <div className='element e3'></div>
     </div>
-    
   )
 }
