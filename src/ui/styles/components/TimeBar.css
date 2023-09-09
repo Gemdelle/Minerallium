@@ -5,7 +5,7 @@
 }
 
 .time-bar {
-  width: 95%;
+  width: 90%;
   height: 5vh;
   margin: auto;
   position: relative;
@@ -18,10 +18,13 @@
   background: linear-gradient(to bottom, #331c02, #b3b696, #331c02);
   transition: all linear 0.2s;
   border-radius: 50px;
+  top: 3vw;
 }
 
 .bg-image {
-  width: 100%;
+  width: 90%;
+  height: 4vw;
   position: absolute;
-  top: 0;
+  left: 5vw;
+  top: 3vw;
 }

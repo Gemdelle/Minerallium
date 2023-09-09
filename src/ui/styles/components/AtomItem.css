@@ -1,6 +1,6 @@
 .atom {
-  width: 10vw;
-  height: 10vw;
+  width: 100px;
+  height: 100px;
 
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
   background-image: url('/public/images/element-option.png');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   color: antiquewhite;
   font-size: 1.5vw;
