@@ -34,28 +34,50 @@ const changeCurrentLevel : any = (previousLevels: any) => {
     return copyOfLevels
 }
 
+function getRandomCompoundFrom(compounds: any): any {
+       const randomIndex = Math.floor(Math.random() * (compounds.length - 0 + 1));
+    return compounds[randomIndex];
+}
+
 const Game: React.FC = () => {
-    const [levels, setlevels] = useState(levelsConfig);
+    const [levels, setLevels] = useState(levelsConfig);
+    const [currentCompound, setCurrentCompound]: any = useState({});
+    const [intervalId, setIntervalId]: any = useState(null);
+    let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
+
     useEffect(() => {
         const interval = setInterval(() => {
-            setlevels((prevLevels) => changeCurrentLevel(prevLevels));
+            setLevels((prevLevels) => changeCurrentLevel(prevLevels));
         }, 3000);
+        setIntervalId(interval);
 
         return () => clearInterval(interval);
     }, []);
 
+    useEffect(() => {
+        let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
+        let currentLevelCompounds = compounds.filter((compound: any) => compound.level === currentLevel!.compoundLevel)
 
-    let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
+        let randomCompound;
+        do {
+            randomCompound = getRandomCompoundFrom(currentLevelCompounds);
+        } while (randomCompound === undefined);
+        setCurrentCompound(randomCompound)
+        return () => {};
+    }, [levels]);
+
+    let onFinish = () => {
+        clearInterval(intervalId);
+    }
+
     return (
         <div className="home-container">
             <div>
-                <TimeBar time={10000} speed={currentLevel!.speed} /> {/* tiempo en milisegundos */}
+                <TimeBar time={10000} speed={currentLevel!.speed} onFinish={onFinish} /> {/* tiempo en milisegundos */}
 
-                <Formula formula={compounds[19].formula} />
+                <Formula formula={currentCompound.formula} />
 
-                <Graphic activeComponent={compounds[19]} />
-
-                <Atom/>
+                <Graphic activeComponent={currentCompound} />
 
                 <div className="atom-container"></div>
 
