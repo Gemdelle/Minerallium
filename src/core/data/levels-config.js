@@ -2,44 +2,44 @@ import LevelStatus from "../levels/LevelStatus"
 
 const levelsConfig = [
     {
-        status: LevelStatus.REACHED,
-        speed: 0
-    },
-    {
-        status: LevelStatus.REACHED,
-        speed: 0
-    },
-    {
         status: LevelStatus.ACTIVE,
-        speed: 0
+        speed: 100
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 0
+        speed: 125
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 0
+        speed: 150
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 0
+        speed: 175
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 0
+        speed: 200
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 0
+        speed: 210
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 0
+        speed: 225
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 0
+        speed: 250
+    },
+    {
+        status: LevelStatus.UNREACHED,
+        speed: 275
+    },
+    {
+        status: LevelStatus.UNREACHED,
+        speed: 300
     },
 ]
 
