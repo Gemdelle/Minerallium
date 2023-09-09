@@ -12,6 +12,7 @@ export default function CH3CH2OH({ compound }:any) {
       <div className='element e6'></div>
       <div className='element e7'></div>
       <div className='element e8'></div>
+      <div className='element e9'></div>
     </div>
   )
 }

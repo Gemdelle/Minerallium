@@ -31,6 +31,7 @@ img {
   border-radius: 50%;
   position: absolute;
   animation: rotate 25s linear infinite;
+  opacity: 100%;
 }
 
 @keyframes rotate {
@@ -129,118 +130,122 @@ img {
 
 
 .CH3CH2OH .e1 {
-  top: 23.3vw;
-  left: 10vw;
+  top: 24.3vw;
+  left: 9vw;
 }
 
 .CH3CH2OH .e2 {
-  top: 23.3vw;
-  left: 18.5vw;
+  top: 24.3vw;
+  left: 16.4vw;
 }
 
 .CH3CH2OH .e3 {
-  top: 23.3vw;
-  left: 25.0vw;
+  top: 24.3vw;
+  left: 23.7vw;
 }
 
 .CH3CH2OH .e4 {
-  top: 23.3vw;
-  left: 33.5vw;
+  top: 24.3vw;
+  left: 31vw;
 }
 
 .CH3CH2OH .e5 {
-  top: 15.6vw;
-  left: 18.5vw;
+  top: 16.6vw;
+  left: 16.4vw;
 }
 
 .CH3CH2OH .e6 {
-  top: 31vw;
-  left: 18.5vw;
+  top: 32vw;
+  left: 16.4vw;
 }
 
 .CH3CH2OH .e7 {
-  top: 15.6vw;
-  left: 25vw;
+  top: 16.6vw;
+  left: 23.7vw;
 }
 
 .CH3CH2OH .e8 {
-  top: 31vw;
-  left: 25vw;
+  top: 32vw;
+  left: 23.7vw;
+}
+.CH3CH2OH .e9 {
+  top: 24.3vw;
+  left: 38.4vw;
 }
 
 .H2SO4 .e1 {
-  top: 23vw;
+  top: 24vw;
   left: 15.5vw;
 }
 
 .H2SO4 .e2 {
-  top: 23vw;
+  top: 24vw;
   left: 23.8vw;
 }
 
 .H2SO4 .e3 {
-  top: 23vw;
+  top: 24vw;
   left: 32.3vw;
 }
 
 .H2SO4 .e4 {
-  top: 15vw;
+  top: 16vw;
   left: 23.8vw;
 }
 
 .H2SO4 .e5 {
-  top: 31.2vw;
+  top: 32.2vw;
   left: 23.8vw;
 }
 
 .H2SO4 .e6 {
-  top: 15vw;
+  top: 16vw;
   left: 32.3vw;
 }
 
 .H2SO4 .e7 {
-  top: 31.2vw;
+  top: 32.2vw;
   left: 15.5vw;
 }
 
 .CH3COOH .e1 {
-  top: 16vw;
-  left: 20vw;
+  top: 17vw;
+  left: 20.25vw;
 }
 
 .CH3COOH .e2 {
-  top: 30.6vw;
-  left: 20vw;
+  top: 33vw;
+  left: 20.25vw;
 }
 
 .CH3COOH .e3 {
-  top: 23.3vw;
+  top: 25vw;
   left: 12.5vw;
 }
 
 .CH3COOH .e4 {
-  top: 23.3vw;
+  top: 25vw;
   left: 35.5vw;
 }
 
 .CH3COOH .e5 {
-  top: 23.3vw;
-  left: 20vw;
+  top: 25vw;
+  left: 20.25vw;
 }
 
 .CH3COOH .e6 {
-  top: 16vw;
+  top: 17vw;
   left: 28vw;
 }
 
 .CH3COOH .e7 {
-  top: 23.3vw;
+  top: 25vw;
   left: 28vw;
 }
 
 .HCOOH .e1 {
-  top: 26vw;
-  left: 15vw;
+  top: 29vw;
+  left: 14vw;
 }
 
 .HCOOH .e2 {
@@ -254,13 +259,13 @@ img {
 }
 
 .HCOOH .e4 {
-  top: 26vw;
-  left: 27.9vw;
+  top: 29vw;
+  left: 28.9vw;
 }
 
 .HCOOH .e5 {
-  top: 22.7vw;
-  left: 34vw;
+  top: 24vw;
+  left: 36.4vw;
 }
 
 .C2H6 .e1 {
@@ -270,40 +275,38 @@ img {
 
 .C2H6 .e2 {
   top: 16vw;
-  left: 20vw;
+  left: 20.2vw;
 }
 
 .C2H6 .e3 {
   top: 16vw;
-  left: 27.5vw;
+  left: 27.3vw;
 }
 
 .C2H6 .e4 {
   top: 23.4vw;
-  left: 27.5vw;
+  left: 27.3vw;
 }
 
 .C2H6 .e5 {
   top: 23.4vw;
-  left: 20vw;
+  left: 20.2vw;
 }
 
 .C2H6 .e6 {
   top: 23.4vw;
-  left: 34.5vw;
+  left: 34.4vw;
 }
 
 .C2H6 .e7 {
   top: 31vw;
-  left: 20vw;
+  left: 20.2vw;
 }
 
 .C2H6 .e8 {
   top: 31vw;
-  left: 27.5vw;
+  left: 27.3vw;
 }
-
-
 
 .e18 {
   left: 19.5vw;
@@ -362,61 +365,69 @@ img {
 
 /* C6H6 */
 
+/* listo */
 .e29 {
-  left: 23.8vw;
-  top: 15vw;
+  left: 24vw;
+  top: 14vw;
 }
-
+/* listo */
 .e30 {
-  left: 23.8vw;
-  top: 24vw;
+  left: 38vw;
+  top: 17vw;
 }
-
+/* listo */
 .e31 {
-  left: 23.8vw;
-  top: 24vw;
+  left: 38vw;
+  top: 35vw;
 }
-
+/* listo */
 .e32 {
-  left: 23.8vw;
-  top: 24vw;
+  left: 24vw;
+  top: 21vw;
 }
-
+/* listo */
 .e33 {
-  left: 31.2vw;
-  top: 16vw;
+  left: 23.9vw;
+  top: 33vw;
 }
-
+/* listo */
 .e34 {
-  left: 31.2vw;
-  top: 16vw;
+  left: 23.9vw;
+  top: 40.5vw;
 }
-
+/* listo */
 .e35 {
-  left: 31.2vw;
-  top: 16vw;
+  left: 32vw;
+  top: 23vw;
 }
-
+/* listo */
 .e36 {
-  left: 31.2vw;
-  top: 16vw;
+  left: 32vw;
+  top: 30vw;
 }
-
+/* listo */
 .e37 {
-  left: 31.2vw;
-  top: 16vw;
+  left: 16vw;
+  top: 30vw;
 }
 
+/* listo */
 .e38 {
-  left: 31.2vw;
-  top: 16vw;
+  left: 16vw;
+  top: 23vw;
 }
-
+/* listo */
 .e39 {
-  left: 31.2vw;
-  top: 16vw;
+  left: 10vw;
+  top: 17vw;
 }
 
+/* listo */
+.e40 {
+  left: 10vw;
+  top: 35vw;
+}
+ 
 
 /* BACKGROUNDS */
 
