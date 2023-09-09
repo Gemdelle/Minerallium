@@ -1,15 +1,37 @@
 .active {
-
+    background-image: url(/public/images/level-active.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .reached {
-    
+    background-image: url(/public/images/level-inactive.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .unreached {
-    
+
 }
 
 .level-bar-container{
-    
+    width: 10vh;
+    height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    background-image: url(/public/images/level-bar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 20vh;
+    left: 12vh;
+}
+
+.level-bar-container div{
+    width: 100%;
+    height: 4vh;
 }

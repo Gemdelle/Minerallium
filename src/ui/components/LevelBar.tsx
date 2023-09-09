@@ -11,8 +11,7 @@ export default function LevelBar({ levels }: any) {
   return <div className="level-bar-container">
     {
         levels.map((level: any, index: number) => {
-            console.log(level.status)
-            return (<div key={index} className={`${level.status.toLowerCase()}`}>{level}</div>)
+            return (<div key={index} className={`${statusClassNameReferences[level.status]}`}></div>)
         })
     }
     </div>;

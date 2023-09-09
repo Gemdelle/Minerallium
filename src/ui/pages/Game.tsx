@@ -23,7 +23,7 @@ const Game: React.FC = () => {
 
                 <div className="atom-container"></div>
                 
-                
+                <LevelBar levels={levelsConfig} />
 
                 <Marquee>
                     <AtomsBar />
