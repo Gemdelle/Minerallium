@@ -1,13 +1,12 @@
 import React from "react";
 import "../styles/components/LevelBar.css";
 
+let statusClassNameReferences: any = {
+    ACTIVE: "active",
+    REACHED: "reached",
+    UNREACHED: "unreached"
+}
 export default function LevelBar({ levels }: any) {
-    let statusClassNameReferences: any = {
-        ACTIVE: "active",
-        REACHED: "reached",
-        UNREACHED: "unreached"
-    }
-
   return <div className="level-bar-container">
     {
         levels.map((level: any, index: number) => {
