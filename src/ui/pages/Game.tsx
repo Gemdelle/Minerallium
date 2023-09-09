@@ -9,6 +9,7 @@ import Graphic from '../components/Graphic';
 import LevelBar from '../components/LevelBar';
 import levelsConfig from '../../core/data/levels-config';
 import LevelStatus from "../../core/levels/LevelStatus";
+import Atom from '../components/Atom';
 
 
 const changeCurrentLevel : any = (previousLevels: any) => {
@@ -50,9 +51,11 @@ const Game: React.FC = () => {
             <div>
                 <TimeBar time={10000} speed={currentLevel!.speed} /> {/* tiempo en milisegundos */}
 
-                <Formula formula={compounds[15].formula} />
+                <Formula formula={compounds[14].formula} />
 
-                <Graphic activeComponent={compounds[15]} />
+                <Graphic activeComponent={compounds[14]} />
+
+                <Atom/>
 
                 <div className="atom-container"></div>
 
