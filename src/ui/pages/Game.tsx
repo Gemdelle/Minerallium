@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import '../styles/pages/Game.css';
 
 import TimeBar from "../components/TimeBar"
-import Marquee from "../components/Marquee"
 import AtomsBar from "../components/AtomsBar"
 import Formula from '../components/Formula';
 import compounds from '../../core/data/compounds';
@@ -59,9 +58,7 @@ const Game: React.FC = () => {
 
                 <LevelBar levels={levels} />
 
-                <Marquee>
-                    <AtomsBar />
-                </Marquee>
+                <AtomsBar atomsList={[]} speed={0}/> {/* speed = pixel/seg*/}
             </div>
             <LoopingVideo />
         </div>
