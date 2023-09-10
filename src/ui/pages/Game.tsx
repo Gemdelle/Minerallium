@@ -4,12 +4,12 @@ import '../styles/pages/Game.css';
 import TimeBar from "../components/TimeBar"
 import AtomsBar from "../components/AtomsBar"
 import Formula from '../components/Formula';
-import compounds from '../../core/data/compounds';
 import Graphic from '../components/Graphic';
 import LevelBar from '../components/LevelBar';
-import levelsConfig from '../../core/data/levels-config';
 import LevelStatus from "../../core/levels/LevelStatus";
-import Atom from '../components/Atom';
+import StorageProvider from "../../core/StorageProvider";
+import LostScreen from "./LostScreen";
+import WonScreen from "./WonScreen";
 
 
 const changeCurrentLevel : any = (previousLevels: any) => {
@@ -40,19 +40,31 @@ function getRandomCompoundFrom(compounds: any): any {
 }
 
 const Game: React.FC = () => {
-    const [levels, setLevels] = useState(levelsConfig);
+    let compounds = StorageProvider.storage.compoundsState
+
+    const [levels, setLevels] = useState(StorageProvider.storage.levelsState);
     const [currentCompound, setCurrentCompound]: any = useState({});
     const [intervalId, setIntervalId]: any = useState(null);
+    const [currentAtomSelection, setCurrentAtomSelection]: any = useState(null);
+    const [hasFinished, setHasFinished]: any = useState(false);
+    const [hasLost, setHasLost]: any = useState(false);
     let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
 
-    useEffect(() => {
+   /*useEffect(() => {
         const interval = setInterval(() => {
-            setLevels((prevLevels) => changeCurrentLevel(prevLevels));
+            let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
+            if (currentLevel == null){
+                setHasFinished(true)
+                clearInterval(intervalId);
+            } else {
+                setLevels((prevLevels: any) => changeCurrentLevel(prevLevels));
+            }
         }, 3000);
         setIntervalId(interval);
 
         return () => clearInterval(interval);
-    }, []);
+    }, []);*/
+
 
     useEffect(() => {
         let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
@@ -67,23 +79,48 @@ const Game: React.FC = () => {
     }, [levels]);
 
     let onFinish = () => {
+        setHasFinished(true)
+        setHasLost(true)
+        //StorageProvider.storage.reset()
         clearInterval(intervalId);
+    }
+
+    let onFormulaCompleted = () => {
+        let findUnreachedRemainingLevel = levels.findIndex((level: any) => {
+            return level.status === LevelStatus.UNREACHED
+        })
+
+        if(findUnreachedRemainingLevel === -1){
+            setHasFinished(true)
+            clearInterval(intervalId);
+        } else {
+            setLevels((prevLevels: any) => changeCurrentLevel(prevLevels));
+        }
+    }
+
+    let onSomeAtomSelected = (atomName: string) => {
+        setCurrentAtomSelection(atomName)
+        setTimeout(() => { setCurrentAtomSelection(null)}, 0)
+    }
+
+    let onInValidAtom = () => {
+        console.log("INVALID")
     }
 
     return (
         <div className="home-container">
             <div>
-                <TimeBar time={10000} speed={currentLevel!.speed} onFinish={onFinish} /> {/* tiempo en milisegundos */}
 
-                <Formula formula={currentCompound.formula} />
-
-                <Graphic activeComponent={currentCompound} />
-
-                <div className="atom-container"></div>
-
-                <LevelBar levels={levels} />
-
-                <AtomsBar atomsList={[]} speed={0}/> {/* speed = pixel/seg*/}
+                {
+                    hasFinished ? (hasLost ? <LostScreen/> : <WonScreen/>):
+                        [
+                            <TimeBar time={80000} speed={currentLevel!.speed} onFinish={onFinish} />,
+                            <Formula formula={currentCompound.formula} />,
+                            <Graphic activeComponent={currentCompound} onFormulaCompleted={onFormulaCompleted} currentAtomSelection={currentAtomSelection} onInValidAtom={onInValidAtom} />,
+                            <LevelBar levels={levels} />,
+                            <AtomsBar atomsList={currentCompound.selectionOptions} speed={0} onAtomSelected={onSomeAtomSelected}/>
+                        ]
+                }
             </div>
             <LoopingVideo />
         </div>

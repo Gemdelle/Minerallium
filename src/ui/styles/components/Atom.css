@@ -24,25 +24,22 @@
 }
 
 .Atom-nucleus {
-    display: block;
-    content: "";
     width: 4vh;
     height: 4vh;
     border-radius: 50%;
-    box-shadow: 0 0 12px 4px #000000;
+    box-shadow: 0 0 1vh 0.5vh #000000;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Atom-nucleus:before {
     display: block;
     content: "";
-    width: 54px;
-    height: 54px;
-    margin-left: -27px;
-    margin-top: -27px;
+    width: 6vh;
+    height: 6vh;
     border-radius: 50%;
-    top: 15px;
-    left: 15px;
     opacity: 0.1;
 }
 

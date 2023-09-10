@@ -1,383 +1,921 @@
+import AtomStatus from "../atoms/AtomStatus";
+
 const compounds = [
     {
       name: "Sulfur Chloride",
       formula: "SCl2",
-      composition: {
-        S: {
-          atoms: 1,
-          electrons: 4
+      composition: [
+        {
+          name: "S",
+          atoms: 1, //TODO: BORRAR property
+          electrons: 4,
+          status: AtomStatus.UNPLACED
         },
-        Cl: {
+        {
+          name: "Cl",
           atoms: 2,
-          electrons: 6
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "Cl",
+          atoms: 2,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 1,
       type: 'liquid-red',
-      state: 'reached-liquid'
+      state: 'reached-liquid',
+      sequence: ["S", "Cl", "Cl"],
+      selectionOptions: ["Fe", "N", "S", "Xe", "Cl", "Br", "Mc", "Ga"]
     },
     {
       name: "Boron Trifluoride",
       formula: "BF3",
-      composition: {
-        B: {
+      composition:[
+        {
+          name: "B",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        F: {
+        {
+          name: "F",
           atoms: 3,
-          electrons: 6
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 3,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 3,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 1,
       type: 'gas-colorless',
-      state: 'reached-gas'
+      state: 'reached-gas',
+      sequence: ["B", "F", "F"],
+      selectionOptions: ["B", "N", "S", "Xe", "F", "Br", "Mc", "Ga"]
     },
     {
       name: "Beryllium Hydride",
       formula: "BeH2",
-      composition: {
-        Be: {
+      composition: [
+        {
+          name: "Be",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        H: {
+        {
+          name: "H",
           atoms: 2,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 2,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 1,
       type: 'solid-colorless',
-      state: 'reached-solid'
+      state: 'reached-solid',
+      sequence: ["Be", "H", "H"],
+      selectionOptions: ["H", "N", "S", "Xe", "F", "Be", "Mc", "Ga"]
     },
     {
       name: "Phosphorus Tribromide",
       formula: "PBr3",
-      composition: {
-        P: {
+      composition:[
+        {
+          name: "P",
           atoms: 1,
-          electrons: 2
+          electrons: 2,
+          status: AtomStatus.UNPLACED
         },
-        Br: {
+        {
+          name: "Br",
           atoms: 3,
-          electrons: 6
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "Br",
+          atoms: 3,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "Br",
+          atoms: 3,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 1,
       type: 'liquid-colorless',
-      state: 'reached-liquid'
+      state: 'reached-liquid',
+      sequence: ["P", "Br", "Br", "Br"],
+      selectionOptions: ["Br", "N", "S", "Xe", "F", "P", "Mc", "Ga"]
     },
     {
       name: "Chlorine Monoxide",
       formula: "Cl2O",
-      composition: {
-        Cl: {
+      composition: [
+        {
+          name: "Cl",
           atoms: 2,
-          electrons: 6
+          electrons: 6,
+          status: AtomStatus.UNPLACED
         },
-        O: {
+        {
+          name: "Cl",
+          atoms: 2,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "O",
           atoms: 1,
-          electrons: 4
+          electrons: 4,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 1,
       type: 'gas-yellow',
-      state: 'reached-gas'
+      state: 'reached-gas',
+      sequence: ["Cl", "Cl", "O"],
+      selectionOptions: ["Br", "N", "Cl", "Xe", "F", "P", "O", "Ga"]
     },
     {
       name: "Xenon Tetrafluoride",
       formula: "XeF4",
-      composition: {
-        Xe: {
+      composition: [
+        {
+          name: "Xe",
           atoms: 1,
-          electrons: 4
+          electrons: 4,
+          status: AtomStatus.UNPLACED
         },
-        F: {
+        {
+          name: "F",
           atoms: 4,
-          electrons: 6
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 4,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 4,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 4,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 1,
       type: 'solid-colorless',
-      state: 'reached-solid'
+      state: 'reached-solid',
+      sequence: ["Xe", "F", "F", "F", "F"],
+      selectionOptions: ["Fe", "N", "O", "Xe","F", "C", "Br", "Mc", "Ga"]
     },
     {
       name: "Chloroform",
       formula: "CHCl3",
-      composition: {
-        C: {
+      composition: [
+        {
+          name: "C",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        H: {
+        {
+          name: "H",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        Cl: {
+        {
+          name: "Cl",
           atoms: 3,
-          electrons: 6
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "Cl",
+          atoms: 3,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "Cl",
+          atoms: 3,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 2,
       type: 'liquid-colorless',
-      state: 'reached-liquid'
+      state: 'reached-liquid',
+      sequence: ["C", "H", "Cl", "Cl", "Cl"],
+      selectionOptions: ["Fe", "C", "O", "Xe","F", "C", "Br", "Cl", "H"]
     },
     {
       name: "Phosphorus Pentafluoride",
       formula: "PF5",
-      composition: {
-        P: {
+      composition: [
+        {
+          name: "P",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        F: {
+        {
+          name: "F",
           atoms: 5,
-          electrons: 6
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 5,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 5,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 5,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 5,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 2,
       type: 'gas-colorless',
-      state: 'reached-gas'
+      state: 'reached-gas',
+      sequence: ["P", "F", "F", "F", "F", "F"],
+      selectionOptions: ["Fe", "C", "O", "Xe","F", "C", "Br", "P", "H"]
     },
     {
       name: "Chloroethylene",
       formula: "C2HCl",
-      composition: {
-        C: {
+      composition: [
+        {
+          name: "C",
           atoms: 2,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        H: {
-          atoms: 1,
-          electrons: 0
+        {
+          name: "C",
+          atoms: 2,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        Cl: {
+        {
+          name: "H",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "Cl",
+          atoms: 1,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 2,
       type: 'gas-colorless',
-      state: 'reached-gas'
+      state: 'reached-gas',
+      sequence: ["C", "C", "H", "Cl"],
+      selectionOptions: ["Fe", "C", "O", "Cl","F", "C", "Br", "P", "H"]
     },
     {
       name: "Cobalt Chloride",
-      formula: "CoCl2",
-      composition: {
-        C: {
+      formula: "COCl2",
+      composition: [
+        {
+          name: "C",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        O: {
+        {
+          name: "O",
           atoms: 1,
-          electrons: 4
+          electrons: 4,
+          status: AtomStatus.UNPLACED
         },
-        Cl: {
+        {
+          name: "Cl",
           atoms: 2,
-          electrons: 6
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "Cl",
+          atoms: 2,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 2,
       type: 'gas-colorless',
-      state: 'reached-gas'
+      state: 'reached-gas',
+      sequence: ["C", "O", "Cl", "Cl"],
+      selectionOptions: ["Co", "C", "O", "Cl","F", "C", "Br", "P", "H"]
     },
     {
       name: "Methyl Bromide",
       formula: "CH3Br",
-      composition: {
-        C: {
+      composition: [
+        {
+          name: "C",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        H: {
+        {
+          name: "H",
           atoms: 3,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        Br: {
+        {
+          name: "H",
+          atoms: 3,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 3,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "Br",
           atoms: 1,
-          electrons: 6
+          electrons: 6,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 2,
       type: 'gas-colorless',
-      state: 'reached-gas'
+      state: 'reached-gas',
+      sequence: ["C", "H", "H", "H", "Br"],
+      selectionOptions: ["Fe", "C", "O", "Cl","F", "C", "Br", "P", "H"]
     },
     {
       name: "Dichlorodifluoromethane",
       formula: "CCl2F2",
-      composition: {
-        C: {
+      composition: [
+        {
+          name: "C",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        Cl: {
+        {
+          name: "Cl",
           atoms: 2,
-          electrons: 6
+          electrons: 6,
+          status: AtomStatus.UNPLACED
         },
-        F: {
+        {
+          name: "Cl",
           atoms: 2,
-          electrons: 6
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 2,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 2,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 2,
       type: 'gas-colorless',
-      state: 'reached-gas'
+      state: 'reached-gas',
+      sequence: ["C", "Cl", "Cl", "F", "F"],
+      selectionOptions: ["Fe", "C", "O", "Cl","F", "C", "Br", "P", "H"]
     },
     {
       name: "Sulfur Hexafluoride",
       formula: "SF6",
-      composition: {
-        S: {
+      composition: [
+        {
+          name: "S",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        F: {
+        {
+          name: "F",
           atoms: 6,
-          electrons: 6
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 6,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 6,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 6,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 6,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "F",
+          atoms: 6,
+          electrons: 6,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 3,
       type: 'gas-colorless',
-      state: 'reached-gas'
+      state: 'reached-gas',
+      sequence: ["S", "F", "F", "F", "F", "F", "F"],
+      selectionOptions: ["Fe", "C", "O", "S","F", "C", "Br", "P", "H"]
     },
     {
       name: "Dimethyl Ether",
       formula: "CH3OCH3",
-      composition: {
-        C: {
+      composition: [
+        {
+          name: "C",
           atoms: 2,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        H: {
+        {
+          name: "C",
+          atoms: 2,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
           atoms: 6,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        O: {
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "O",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 3,
       type: 'gas-colorless',
-      state: 'reached-gas'
+      state: 'reached-gas',
+      sequence: ["C", "C", "H", "H", "H", "H", "H", "H", "O"],
+      selectionOptions: ["Fe", "C", "O", "S","F", "C", "Br", "P", "H"]
     },
     {
       name: "Benzene",
       formula: "C6H6",
-      composition: {
-        C: {
+      composition: [
+        {
+          name: "C",
           atoms: 6,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        H: {
+        {
+          name: "C",
           atoms: 6,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "C",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "C",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "C",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "C",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 3,
       type: 'liquid-yellow',
-      state: 'reached-liquid'
+      state: 'reached-liquid',
+      sequence: ["C", "C", "C", "C", "C", "C", "H", "H", "H", "H", "H", "H"],
+      selectionOptions: ["Fe", "C", "O", "S","F", "C", "Br", "P", "H"]
     },
     {
       name: "Ethane",
       formula: "C2H6",
-      composition: {
-        C: {
+      composition: [
+        {
+          name: "C",
           atoms: 2,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        H: {
+        {
+          name: "C",
+          atoms: 2,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
           atoms: 6,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 3,
       type: 'gas-colorless',
-      state: 'reached-gas'
+      state: 'reached-gas',
+      sequence: ["C", "C", "H", "H", "H", "H", "H", "H"],
+      selectionOptions: ["Fe", "C", "O", "S","F", "C", "Br", "P", "H"]
     },
     {
       name: "Formic Acid",
       formula: "HCOOH",
-      composition: {
-        H: {
+      composition: [
+        {
+          name: "H",
           atoms: 2,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        C: {
+        {
+          name: "H",
+          atoms: 2,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "C",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        O: {
+        {
+          name: "O",
           atoms: 2,
-          electrons: 4
+          electrons: 4,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "O",
+          atoms: 2,
+          electrons: 4,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 3,
       type: 'liquid-colorless',
-      state: 'reached-liquid'
+      state: 'reached-liquid',
+      sequence: ["H", "H", "C", "O", "O"],
+      selectionOptions: ["Fe", "C", "O", "S","F", "C", "Br", "P", "H"]
     },
     {
       name: "Acetic Acid",
       formula: "CH3COOH",
-      composition: {
-        C: {
+      composition: [
+        {
+          name: "C",
           atoms: 2,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        H: {
+        {
+          name: "C",
+          atoms: 2,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
           atoms: 4,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        O: {
+        {
+          name: "H",
+          atoms: 4,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 4,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 4,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "O",
           atoms: 2,
-          electrons: 4
+          electrons: 4,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "O",
+          atoms: 2,
+          electrons: 4,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 3,
       type: 'liquid-colorless',
-      state: 'reached-liquid'
+      state: 'reached-liquid',
+      sequence: ["C", "C", "H", "H", "H", "H", "O", "O"],
+      selectionOptions: ["Fe", "C", "O", "S","F", "C", "Br", "P", "H"]
     },
     {
       name: "Sulfuric Acid",
       formula: "H2SO4",
-      composition: {
-        H: {
+      composition: [
+        {
+          name: "H",
           atoms: 2,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        S: {
+        {
+          name: "H",
+          atoms: 2,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "S",
           atoms: 1,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        O: {
+        {
+          name: "O",
           atoms: 4,
-          electrons: 4
+          electrons: 4,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "O",
+          atoms: 4,
+          electrons: 4,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "O",
+          atoms: 4,
+          electrons: 4,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "O",
+          atoms: 4,
+          electrons: 4,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 3,
       type: 'liquid-yellow',
-      state: 'reached-liquid'
+      state: 'reached-liquid',
+      sequence: ["H", "H", "S", "O", "O", "O", "O"],
+      selectionOptions: ["Fe", "C", "O", "S","F", "C", "Br", "P", "H"]
     },
     {
       name: "Ethanol",
       formula: "CH3CH2OH",
-      composition: {
-        C: {
+      composition: [
+        {
+          name: "C",
           atoms: 2,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        H: {
+        {
+          name: "C",
+          atoms: 2,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
           atoms: 6,
-          electrons: 0
+          electrons: 0,
+          status: AtomStatus.UNPLACED
         },
-        O: {
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "H",
+          atoms: 6,
+          electrons: 0,
+          status: AtomStatus.UNPLACED
+        },
+        {
+          name: "O",
           atoms: 1,
-          electrons: 4
+          electrons: 4,
+          status: AtomStatus.UNPLACED
         }
-      },
+      ],
       level: 3,
       type: 'liquid-colorless',
-      state: 'reached-liquid'
+      state: 'reached-liquid',
+      sequence: ["C", "C", "H", "H", "H", "H", "H", "H", "O"],
+      selectionOptions: ["Fe", "C", "O", "S","F", "C", "Br", "P", "H"]
     }
   ]; 
 

@@ -25,21 +25,41 @@ img {
 .element {
   width: 8vw;
   height: 8vw;
+  position: absolute;
+}
+
+.element.point {
+  border: solid 1vh red;
+}
+
+.element::before {
+  content: "";
   background-image: url(/public/images/hidden-element.png);
   background-position: center;
   background-size: contain;
   border-radius: 50%;
-  position: absolute;
   animation: rotate 25s linear infinite;
-  opacity: 100%;
+  opacity: 1;
   color: white;
-}
-
-.element.hide {
   width: 8vw;
   height: 8vw;
-  filter: invert(100%);
   position: absolute;
+  z-index: 999;
+}
+
+.element.hide::before {
+  content: "";
+  background-image: url(/public/images/hidden-element.png);
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
+  animation: rotate 25s linear infinite;
+  opacity: 0;
+  color: white;
+  width: 8vw;
+  height: 8vw;
+  position: absolute;
+  z-index: 999;
 }
 
 @keyframes rotate {
