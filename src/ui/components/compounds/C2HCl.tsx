@@ -1,14 +1,23 @@
 import React from 'react'
 import "../../styles/components/Graphic.css"
+import Atom from "../Atom";
 
-export default function C2HCl({ compound }:any) {
-  return (
-    <div className='graphic-container C2HCl'>
-      <div className='element C1'>C</div>
-      <div className='element C2'>C</div>
-      <div className='element H1'>H</div>
-      <div className='element Cl1'>Cl</div>
-    </div>
-    
-  )
+export default function C2HCl({compound}: any) {
+    return (
+        <div className='graphic-container C2HCl'>
+            {
+                Object.keys(compound.composition).map((key: any, index: number) => {
+                    let components: any = [...Array(compound.composition[key].atoms)].map((_: any, indexIntern: number) => {
+                        return (
+                            <div key={index + indexIntern} className={`element hide ${key}${indexIntern + 1}`}>
+                                <Atom atom={compound.composition[key]} name={key}/>
+                            </div>
+                        )
+                    })
+                    return components
+                })
+            }
+        </div>
+
+    )
 }

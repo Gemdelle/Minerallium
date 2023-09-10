@@ -35,6 +35,13 @@ img {
   color: white;
 }
 
+.element.hide {
+  width: 8vw;
+  height: 8vw;
+  filter: invert(100%);
+  position: absolute;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
@@ -511,7 +518,7 @@ img {
 
 .CCl2F2 .Cl2{
   left: 23.8vw;
-  top: 15.5vw; 
+  top: 15.5vw;
 }
 
 .CCl2F2 .F2{
@@ -622,7 +629,7 @@ img {
 .C6H6 .H6 {
   left: 10vw;
   top: 32vw;
-} 
+}
 
 .C6H6 .C1 {
   left: 16vw;
@@ -651,6 +658,31 @@ img {
 .C6H6 .C6 {
   left: 32vw;
   top: 20vw;
+}
+
+.C6H6 .e8 {
+  left: 32vw;
+  top: 30vw;
+}
+
+.C6H6 .e9 {
+  left: 16vw;
+  top: 30vw;
+}
+
+.C6H6 .e10 {
+  left: 16vw;
+  top: 23vw;
+}
+
+.C6H6 .e11 {
+  left: 10vw;
+  top: 17vw;
+}
+
+.C6H6 .e12 {
+  left: 10vw;
+  top: 35vw;
 }
 
 /* 16. C2H6 */

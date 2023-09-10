@@ -75,9 +75,9 @@ const Game: React.FC = () => {
             <div>
                 <TimeBar time={10000} speed={currentLevel!.speed} onFinish={onFinish} /> {/* tiempo en milisegundos */}
 
-                <Formula formula={compounds[13].formula} />
+                <Formula formula={currentCompound.formula} />
 
-                <Graphic activeComponent={compounds[13]} />
+                <Graphic activeComponent={currentCompound} />
 
                 <div className="atom-container"></div>
 

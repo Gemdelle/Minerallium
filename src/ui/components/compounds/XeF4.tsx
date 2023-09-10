@@ -1,14 +1,22 @@
 import React from 'react'
 import "../../styles/components/Graphic.css"
+import Atom from "../Atom";
 
-export default function XeF4({ compound }:any) {
-  return (
-    <div className='graphic-container XeF4'>
-      <div className='element Xe1'>Xe</div>
-      <div className='element F1'>F</div>
-      <div className='element F2'>F</div>
-      <div className='element F3'>F</div>
-      <div className='element F4'>F</div>
-    </div>
-  )
+export default function XeF4({compound}: any) {
+    return (
+        <div className='graphic-container XeF4'>
+            {
+                Object.keys(compound.composition).map((key: any, index: number) => {
+                    let components: any = [...Array(compound.composition[key].atoms)].map((_: any, indexIntern: number) => {
+                        return (
+                            <div key={index + indexIntern} className={`element hide ${key}${indexIntern + 1}`}>
+                                <Atom atom={compound.composition[key]} name={key}/>
+                            </div>
+                        )
+                    })
+                    return components
+                })
+            }
+        </div>
+    )
 }

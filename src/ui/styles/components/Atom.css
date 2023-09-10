@@ -1,195 +1,586 @@
-@keyframes electron {
-    from {
-        transform: rotateZ(0deg);
-    }
-    to {
-        transform: rotateZ(360deg);
-    }
-}
-@keyframes horizontal {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
-}
-@keyframes horizontalRevert {
-    from {
-        transform: rotateY(360deg);
-    }
-    to {
-        transform: rotateY(0deg);
-    }
-}
-@keyframes vertical {
-    from {
-        transform: rotateX(0deg);
-    }
-    to {
-        transform: rotateX(360deg);
-    }
-}
-@keyframes verticalRevert {
-    from {
-        transform: rotateX(360deg);
-    }
-    to {
-        transform: rotateX(0deg);
-    }
-}
-@keyframes lateral {
-    from {
-        transform: rotateZ(0deg);
-    }
-    to {
-        transform: rotateZ(360deg);
-    }
-}
-@keyframes lateralRevert {
-    from {
-        transform: rotateZ(360deg);
-    }
-    to {
-        transform: rotateZ(0deg);
-    }
-}
-@keyframes electron {
-    from {
-        transform: rotateZ(0deg);
-    }
-    to {
-        transform: rotateZ(360deg);
-    }
-}
-@keyframes horizontal {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
-}
-@keyframes horizontalRevert {
-    from {
-        transform: rotateY(360deg);
-    }
-    to {
-        transform: rotateY(0deg);
-    }
-}
-@keyframes vertical {
-    from {
-        transform: rotateX(0deg);
-    }
-    to {
-        transform: rotateX(360deg);
-    }
-}
-@keyframes verticalRevert {
-    from {
-        transform: rotateX(360deg);
-    }
-    to {
-        transform: rotateX(0deg);
-    }
-}
-@keyframes lateral {
-    from {
-        transform: rotateZ(0deg);
-    }
-    to {
-        transform: rotateZ(360deg);
-    }
-}
-@keyframes lateralRevert {
-    from {
-        transform: rotateZ(360deg);
-    }
-    to {
-        transform: rotateZ(0deg);
-    }
-}
-
-.wrap, .circle {
-    transition: transform 500ms linear;
-    transform-style: preserve-3d;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-    margin-top: 50px;
-    position: absolute;
-}
-.circle {
-    position: absolute;
-    border: 3px solid #666;
-    border-radius: 250px;
-    margin: auto;
-}
-.circle.c2, .circle.center {
-    border: 2px solid #555;
-    width: 140px;
-    height: 140px;
-    top: 55px;
-    left: 55px;
-}
-.circle.center {
-    background: #999;
-    width: 30px;
-    height: 30px;
-    top: 110px;
-    left: 110px;
-    box-shadow: 0 0 5px #fff;
-}
-.wrap-electron {
-    border: 0px solid #fff;
-    position: absolute;
+.atom-representation-container {
     width: 100%;
     height: 100%;
-    animation: electron 3s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.electron {
+
+.Atom {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Atom-nucleus,
+.Atom-nucleus:before {
+    position: absolute;
+    background: #FCF1F3;
+}
+
+.Atom-nucleus {
+    display: block;
+    content: "";
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    box-shadow: 0 0 12px 4px #000000;
+    z-index: 2;
+}
+
+.Atom-nucleus:before {
+    display: block;
+    content: "";
+    width: 54px;
+    height: 54px;
+    margin-left: -27px;
+    margin-top: -27px;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+    opacity: 0.1;
+}
+
+.Atom-orbit {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: solid 4px transparent;
+    transform-style: preserve-3d;
+}
+
+.Atom-orbit--visible {
+    border-radius: 50%;
+    border-color: white;
+}
+
+.Atom-electron {
+    transform-style: preserve-3d;
+}
+.Atom-electron:before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    margin-top: -12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+.Atom-electron:after {
+    display: block;
+    content: "";
     width: 12px;
     height: 12px;
-    background: #666;
-    left: 50%;
-    margin-left: -8px;
-    border: none;
-    top: -7px;
-    -webkit-transform-origin: 50% 50%;
-}
-.c2 .wrap-electron {
-    animation: electron 2s linear infinite;
-}
-.c2 .electron {
-    top: -6px;
-}
-.wrap {
-    border: 0px solid #666;
-    animation: lateral 15s ease-in-out infinite;
-}
-.wrap.r {
-    animation: lateralRevert 8s linear infinite;
-}
-.vertical {
-    animation: vertical 8s linear infinite;
-}
-.horizontal {
-    animation: horizontalRevert 6s linear infinite;
-}
-.vertical.c2 {
-    animation: vertical 4s linear infinite;
-}
-.horizontal.c2 {
-    animation: horizontalRevert 3s linear infinite;
+    margin-left: -6px;
+    margin-top: -6px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    border-color: rgba(255, 255, 255, 0.4);
 }
 
-.container {
-    position: relative;
-    margin: auto;
-    width: 250px;
+.Atom-orbit--0.Atom-orbit--visible {
+    transform: rotateZ(0deg) rotateY(70deg);
 }
 
-.white {
-    color: white;
+.Atom-orbit--0.Atom-orbit--foreground {
+    transform: translateZ(100px) rotateZ(0deg) rotateY(70deg);
+}
+
+@-webkit-keyframes rotate-top {
+    0% {
+        transform: rotate(0deg) translate(-40px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(-40px) rotate(-360deg);
+    }
+}
+
+@keyframes rotate-top {
+    0% {
+        transform: rotate(0deg) translate(-40px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translate(-40px) rotate(-360deg);
+    }
+}
+@-webkit-keyframes zind-left {
+    0% {
+        z-index: 1;
+    }
+    49% {
+        z-index: 1;
+    }
+    50% {
+        z-index: 3;
+    }
+    100% {
+        z-index: 3;
+    }
+}
+@keyframes zind-left {
+    0% {
+        z-index: 1;
+    }
+    49% {
+        z-index: 1;
+    }
+    50% {
+        z-index: 3;
+    }
+    100% {
+        z-index: 3;
+    }
+}
+@-webkit-keyframes zind-right {
+    0% {
+        z-index: 3;
+    }
+    49% {
+        z-index: 3;
+    }
+    50% {
+        z-index: 1;
+    }
+    100% {
+        z-index: 1;
+    }
+}
+@keyframes zind-right {
+    0% {
+        z-index: 3;
+    }
+    49% {
+        z-index: 3;
+    }
+    50% {
+        z-index: 1;
+    }
+    100% {
+        z-index: 1;
+    }
+}
+@-webkit-keyframes zind-top {
+    0% {
+        z-index: 1;
+    }
+    24% {
+        z-index: 1;
+    }
+    25% {
+        z-index: 3;
+    }
+    75% {
+        z-index: 3;
+    }
+    76% {
+        z-index: 1;
+    }
+}
+@keyframes zind-top {
+    0% {
+        z-index: 1;
+    }
+    24% {
+        z-index: 1;
+    }
+    25% {
+        z-index: 3;
+    }
+    75% {
+        z-index: 3;
+    }
+    76% {
+        z-index: 1;
+    }
+}
+.Atom-orbit--0 {
+    -webkit-animation: zind-top infinite linear;
+    animation: zind-top infinite linear;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+}
+.Atom-orbit--0 .Atom-electron {
+    -webkit-animation: rotate-top infinite linear;
+    animation: rotate-top infinite linear;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    transform: rotate(0deg) translate(-40px) rotate(0deg);
+}
+.Atom-orbit--0 .Atom-electron:before, .Atom-orbit--top .Atom-electron:after {
+    transform: rotateY(-70deg) rotateZ(0deg);
+}
+.Atom-orbit--0 .Atom-electron:before {
+    background: url("/public/images/electron.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Atom-orbit--0 .Atom-electron:after {
+    background: url("/public/images/electron.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 5px 0px #fad161;
+}
+
+.Atom-orbit--1.Atom-orbit--visible {
+    transform: rotateZ(-60deg) rotateY(70deg);
+}
+
+.Atom-orbit--1.Atom-orbit--foreground {
+    transform: translateZ(100px) rotateZ(-60deg) rotateY(70deg);
+}
+
+@-webkit-keyframes rotate-left {
+    0% {
+        transform: rotate(60deg) translate(-40px) rotate(-60deg);
+    }
+    100% {
+        transform: rotate(420deg) translate(-40px) rotate(-420deg);
+    }
+}
+
+@keyframes rotate-left {
+    0% {
+        transform: rotate(60deg) translate(-40px) rotate(-60deg);
+    }
+    100% {
+        transform: rotate(420deg) translate(-40px) rotate(-420deg);
+    }
+}
+@keyframes zind-left {
+    0% {
+        z-index: 1;
+    }
+    49% {
+        z-index: 1;
+    }
+    50% {
+        z-index: 3;
+    }
+    100% {
+        z-index: 3;
+    }
+}
+@keyframes zind-right {
+    0% {
+        z-index: 3;
+    }
+    49% {
+        z-index: 3;
+    }
+    50% {
+        z-index: 1;
+    }
+    100% {
+        z-index: 1;
+    }
+}
+@keyframes zind-top {
+    0% {
+        z-index: 1;
+    }
+    24% {
+        z-index: 1;
+    }
+    25% {
+        z-index: 3;
+    }
+    75% {
+        z-index: 3;
+    }
+    76% {
+        z-index: 1;
+    }
+}
+.Atom-orbit--1 {
+    -webkit-animation: zind-left infinite linear;
+    animation: zind-left infinite linear;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+.Atom-orbit--1 .Atom-electron {
+    -webkit-animation: rotate-left infinite linear;
+    animation: rotate-left infinite linear;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    transform: rotate(60deg) translate(-40px) rotate(-60deg);
+}
+.Atom-orbit--1 .Atom-electron:before, .Atom-orbit--left .Atom-electron:after {
+    transform: rotateY(-70deg) rotateZ(60deg);
+}
+.Atom-orbit--1 .Atom-electron:before {
+    background: url("/public/images/electron.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Atom-orbit--1 .Atom-electron:after {
+    background: url("/public/images/electron.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 5px 0px #69ee75;
+}
+
+.Atom-orbit--2.Atom-orbit--visible {
+    transform: rotateZ(60deg) rotateY(70deg);
+}
+
+.Atom-orbit--2.Atom-orbit--foreground {
+    transform: translateZ(100px) rotateZ(60deg) rotateY(70deg);
+}
+
+@-webkit-keyframes rotate-right {
+    0% {
+        transform: rotate(120deg) translate(-40px) rotate(-120deg);
+    }
+    100% {
+        transform: rotate(480deg) translate(-40px) rotate(-480deg);
+    }
+}
+
+@keyframes rotate-right {
+    0% {
+        transform: rotate(120deg) translate(-40px) rotate(-120deg);
+    }
+    100% {
+        transform: rotate(480deg) translate(-40px) rotate(-480deg);
+    }
+}
+@keyframes zind-left {
+    0% {
+        z-index: 1;
+    }
+    49% {
+        z-index: 1;
+    }
+    50% {
+        z-index: 3;
+    }
+    100% {
+        z-index: 3;
+    }
+}
+@keyframes zind-right {
+    0% {
+        z-index: 3;
+    }
+    49% {
+        z-index: 3;
+    }
+    50% {
+        z-index: 1;
+    }
+    100% {
+        z-index: 1;
+    }
+}
+@keyframes zind-top {
+    0% {
+        z-index: 1;
+    }
+    24% {
+        z-index: 1;
+    }
+    25% {
+        z-index: 3;
+    }
+    75% {
+        z-index: 3;
+    }
+    76% {
+        z-index: 1;
+    }
+}
+.Atom-orbit--2 {
+    -webkit-animation: zind-right infinite linear;
+    animation: zind-right infinite linear;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+}
+.Atom-orbit--2 .Atom-electron {
+    -webkit-animation: rotate-right infinite linear;
+    animation: rotate-right infinite linear;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+    transform: rotate(120deg) translate(-40px) rotate(-120deg);
+}
+.Atom-orbit--2 .Atom-electron:before, .Atom-orbit--right .Atom-electron:after {
+    transform: rotateY(-70deg) rotateZ(-60deg);
+}
+.Atom-orbit--2 .Atom-electron:before {
+    background: url("/public/images/electron.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Atom-orbit--2 .Atom-electron:after {
+    background: url("/public/images/electron.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 5px 0px #992dd8;
+}
+
+.Atom-orbit--3.Atom-orbit--visible {
+    transform: rotateZ(60deg) rotateY(70deg);
+}
+
+.Atom-orbit--3.Atom-orbit--foreground {
+    transform: translateZ(100px) rotateZ(60deg) rotateY(70deg);
+}
+
+.Atom-orbit--3 {
+    -webkit-animation: zind-right infinite linear;
+    animation: zind-right infinite linear;
+    -webkit-animation-duration: 0.9s;
+    animation-delay: 0.2s;
+    animation-duration: 0.9s;
+}
+.Atom-orbit--3 .Atom-electron {
+    -webkit-animation: rotate-right infinite linear;
+    animation: rotate-right infinite linear;
+    -webkit-animation-duration: 0.9s;
+    animation-duration: 0.9s;
+    animation-delay: 0.2s;
+    transform: rotate(120deg) translate(-40px) rotate(-120deg);
+}
+.Atom-orbit--3 .Atom-electron:before, .Atom-orbit--right .Atom-electron:after {
+    transform: rotateY(-70deg) rotateZ(-60deg);
+}
+.Atom-orbit--3 .Atom-electron:before {
+    background: url("/public/images/electron.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Atom-orbit--3 .Atom-electron:after {
+    background: url("/public/images/electron.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 5px 0px #992dd8;
+}
+
+/*
+animation-delay: 2s;
+*/
+
+.Atom-orbit--4.Atom-orbit--visible {
+    transform: rotateZ(-60deg) rotateY(70deg);
+}
+
+.Atom-orbit--4.Atom-orbit--foreground {
+    transform: translateZ(100px) rotateZ(-60deg) rotateY(70deg);
+}
+.Atom-orbit--4 {
+    -webkit-animation: zind-left infinite linear;
+    animation: zind-left infinite linear;
+    -webkit-animation-duration: 1.5s;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.Atom-orbit--4 .Atom-electron {
+    -webkit-animation: rotate-left infinite linear;
+    animation: rotate-left infinite linear;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    animation-delay: 0.6s;
+    transform: rotate(60deg) translate(-40px) rotate(-60deg);
+}
+.Atom-orbit--4 .Atom-electron:before, .Atom-orbit--left .Atom-electron:after {
+    transform: rotateY(-70deg) rotateZ(60deg);
+}
+.Atom-orbit--4 .Atom-electron:before {
+    background: url("/public/images/electron.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Atom-orbit--4 .Atom-electron:after {
+    background: url("/public/images/electron.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 5px 0px #69ee75;
+}
+
+
+.Atom-orbit--5.Atom-orbit--visible {
+    transform: rotateZ(0deg) rotateY(70deg);
+}
+
+.Atom-orbit--5.Atom-orbit--foreground {
+    transform: translateZ(100px) rotateZ(0deg) rotateY(70deg);
+}
+
+.Atom-orbit--5 {
+    -webkit-animation: zind-top infinite linear;
+    animation: zind-top infinite linear;
+    -webkit-animation-duration: 1.2s;
+    animation-delay: 0.4s;
+    animation-duration: 1.2s;
+}
+.Atom-orbit--5 .Atom-electron {
+    -webkit-animation: rotate-top infinite linear;
+    animation: rotate-top infinite linear;
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    animation-delay: 0.4s;
+    transform: rotate(0deg) translate(-40px) rotate(0deg);
+}
+.Atom-orbit--5 .Atom-electron:before, .Atom-orbit--top .Atom-electron:after {
+    transform: rotateY(-70deg) rotateZ(0deg);
+}
+.Atom-orbit--5 .Atom-electron:before {
+    background: url("/public/images/electron.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Atom-orbit--5 .Atom-electron:after {
+    background: url("/public/images/electron.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 5px 0px #fad161;
+}
+
+.nameplate {
+    font-family: sans-serif;
+    padding-left: 10px;
+    opacity: 0.5;
+}
+.nameplate span {
+    font-size: small;
+    opacity: 0.5;
+    font-style: italic;
+}
+.nameplate h2 {
+    margin: -3px 0;
+    font-weight: normal;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.loader {
+    display: flex;
+    height: 100%;
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: center;
 }
