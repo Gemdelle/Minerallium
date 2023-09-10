@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react'
 import "../styles/components/TimeBar.css"
 
 export default function TimeBar({time, speed, onFinish}: { time: number, speed: number, onFinish: () => void }) {
-    const [width, setWidth] = useState(100);
+    const [width, setWidth] = useState(95);
     const interval = time / speed;
 
     // Iniciamos el contador cuando se muestra el componente
@@ -34,7 +34,7 @@ export default function TimeBar({time, speed, onFinish}: { time: number, speed: 
     }, [width, time, interval]);
 
     useEffect(() => {
-        setWidth(100);
+        setWidth(95);
         return () => {
         };
     }, [interval]);
@@ -45,7 +45,6 @@ export default function TimeBar({time, speed, onFinish}: { time: number, speed: 
             <div className="time-bar">
                 <div className="progress" style={{width: width + '%'}}></div>
             </div>
-            <img className="bg-image" src='/images/time-bar.png' alt="time bar Background"/>
         </div>
     )
 }

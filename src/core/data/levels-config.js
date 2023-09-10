@@ -3,61 +3,61 @@ import LevelStatus from "../levels/LevelStatus"
 const levelsConfig = [
     {
         status: LevelStatus.ACTIVE,
-        speed: 100,
+        speed: 315,
         level: 1,
         compoundLevel: 1
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 125,
+        speed: 316,
         level: 2,
         compoundLevel: 1
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 150,
+        speed: 317,
         level: 3,
         compoundLevel: 1
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 175,
+        speed: 318,
         level: 4,
         compoundLevel: 2
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 200,
+        speed: 319,
         level: 5,
         compoundLevel: 2
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 210,
+        speed: 320,
         level: 6,
         compoundLevel: 2
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 225,
+        speed: 321,
         level: 7,
         compoundLevel: 3
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 250,
+        speed: 322,
         level: 8,
         compoundLevel: 3
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 275,
+        speed: 323,
         level: 9,
         compoundLevel: 3
     },
     {
         status: LevelStatus.UNREACHED,
-        speed: 300,
+        speed: 324,
         level: 10,
         compoundLevel: 3
     },

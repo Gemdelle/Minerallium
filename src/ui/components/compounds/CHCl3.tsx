@@ -7,8 +7,8 @@ export default function CHCl3({ compound }:any) {
       <div className='element e1'></div>
       <div className='element e2'></div>
       <div className='element e3'></div>
-      <div className='element e7'></div>
-      <div className='element e8'></div>
+      <div className='element e4'></div>
+      <div className='element e5'></div>
     </div>
     
   )

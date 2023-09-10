@@ -4,12 +4,12 @@ import "../../styles/components/Graphic.css"
 export default function PF5({ compound }:any) {
   return (
     <div className='graphic-container PF5'>
+      <div className='element e1'></div>
       <div className='element e2'></div>
-      <div className='element e13'></div>
-      <div className='element e14'></div>
-      <div className='element e15'></div>
-      <div className='element e16'></div>
-      <div className='element e17'></div>
+      <div className='element e3'></div>
+      <div className='element e4'></div>
+      <div className='element e5'></div>
+      <div className='element e6'></div>
     </div>
     
   )
