@@ -28,8 +28,10 @@ img {
   position: absolute;
 }
 
-.element.point {
-  border: solid 1vh red;
+.element.point::before {
+  background-image: url(/public/images/guessing-element.png);
+  background-position: center;
+  background-size: contain;
 }
 
 .element::before {
@@ -71,210 +73,10 @@ img {
   }
 }
 
-/* .e1 {
-  left: 15vw;
-  top: 24vw;
-}
-
-.e2 {
-  left: 23.8vw;
-  top: 24vw;
-}
-
-.e3 {
-  left: 33vw;
-  top: 24vw;
-}
-
-.e4 {
-  left: 16vw;
-  top: 30vw;
-}
-
-.e5 {
-  left: 23.8vw;
-  top: 15vw;
-}
-
-.e6 {
-  left: 32vw;
-  top: 30vw;
-}
-
-.e7 {
-  left: 23.8vw;
-  top: 15.5vw;
-}
-
-.e8 {
-  left: 23.8vw;
-  top: 33vw;
-}
-
-.e9 {
-  left: 12vw;
-  top: 24vw;
-}
-
-.e10 {
-  left: 19.6vw;
-  top: 24vw;
-}
-
-.e11 {
-  left: 27.3vw;
-  top: 24vw;
-}
-
-.e12 {
-  left: 35vw;
-  top: 24vw;
-}
-
-.e13 {
-  left: 23.8vw;
-  top: 15.5vw;
-}
-
-.e14 {
-  left: 15vw;
-  top: 22.5vw;
-}
-
-.e15 {
-  left: 33vw;
-  top: 22.5vw;
-}
-
-.e16 {
-  left: 18.5vw;
-  top: 32vw;
-}
-
-.e17 {
-  left: 29.5vw;
-  top: 32vw;
-}
-
-.e18 {
-  left: 19.5vw;
-  top: 16vw;
-}
-
-.e19 {
-  left: 19.5vw;
-  top: 32vw;
-}
-
-.e20 {
-  left: 28.5vw;
-  top: 16vw;
-}
-
-.e21 {
-  left: 9vw;
-  top: 24vw;
-}
-
-.e22 {
-  left: 16.4vw;
-  top: 24vw;
-}
-
-.e23{
-  left: 31.2vw;
-  top: 24vw;
-}
-
-.e24 {
-  left: 31.2vw;
-  top: 32vw;
-}
-
-.e25 {
-  left: 16.4vw;
-  top: 16vw;
-}
-
-.e26 {
-  left: 38.6vw;
-  top: 24vw;
-}
-
-.e27 {
-  left: 16.4vw;
-  top: 32vw;
-}
-
-.e28 {
-  left: 31.2vw;
-  top: 16vw;
-}
-
-.e29 {
-  left: 24vw;
-  top: 14vw;
-}
-
-.e30 {
-  left: 38vw;
-  top: 17vw;
-}
-
-.e31 {
-  left: 38vw;
-  top: 35vw;
-}
-
-.e32 {
-  left: 24vw;
-  top: 21vw;
-}
-
-.e33 {
-  left: 23.9vw;
-  top: 33vw;
-}
-
-.e34 {
-  left: 23.9vw;
-  top: 40.5vw;
-}
-
-.e35 {
-  left: 32vw;
-  top: 23vw;
-}
-
-.e36 {
-  left: 32vw;
-  top: 30vw;
-}
-
-.e37 {
-  left: 16vw;
-  top: 30vw;
-}
-
-.e38 {
-  left: 16vw;
-  top: 23vw;
-}
-
-.e39 {
-  left: 10vw;
-  top: 17vw;
-}
-
-.e40 {
-  left: 10vw;
-  top: 35vw;
-} */
-
 /* 01. SCL2 */
 
 .SCl2 .Cl1 {
-  left: 15vw;
+  left: 14.7vw;
   top: 24vw;
 }
 
@@ -356,7 +158,7 @@ img {
   top: 24vw;
 }
 
-.Cl2O .O {
+.Cl2O .O1 {
   left: 23.8vw;
   top: 24vw;
 }
