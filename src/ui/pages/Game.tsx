@@ -30,12 +30,11 @@ const changeCurrentLevel : any = (previousLevels: any) => {
         ...copyOfLevels[firstUnReachedLevelIndex],
         status: LevelStatus.ACTIVE
     }
-
     return copyOfLevels
 }
 
 function getRandomCompoundFrom(compounds: any): any {
-       const randomIndex = Math.floor(Math.random() * (compounds.length - 0 + 1));
+       const randomIndex = Math.floor(Math.random() * (compounds.length - 0));
     return compounds[randomIndex];
 }
 
@@ -49,53 +48,57 @@ const Game: React.FC = () => {
     const [hasFinished, setHasFinished]: any = useState(false);
     const [hasLost, setHasLost]: any = useState(false);
     let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
+    const [alreadyPickedCompounds, setAlreadyPickedCompounds]: any = useState([]);
 
-   /*useEffect(() => {
+   useEffect(() => {
         const interval = setInterval(() => {
-            let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
-            if (currentLevel == null){
-                setHasFinished(true)
-                clearInterval(intervalId);
-            } else {
-                setLevels((prevLevels: any) => changeCurrentLevel(prevLevels));
-            }
+            onFormulaCompleted()
         }, 3000);
         setIntervalId(interval);
 
         return () => clearInterval(interval);
-    }, []);*/
+    }, []);
 
 
     useEffect(() => {
         let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
         let currentLevelCompounds = compounds.filter((compound: any) => compound.level === currentLevel!.compoundLevel)
-
-        let randomCompound;
+        let randomCompound: any
         do {
             randomCompound = getRandomCompoundFrom(currentLevelCompounds);
+            let foundComponent = alreadyPickedCompounds.findIndex((componentFormula:any) => componentFormula === randomCompound.formula)
+            if (foundComponent !== -1) {
+                randomCompound = undefined
+            }
         } while (randomCompound === undefined);
         setCurrentCompound(randomCompound)
+        setAlreadyPickedCompounds([...alreadyPickedCompounds, randomCompound.formula])
         return () => {};
     }, [levels]);
 
     let onFinish = () => {
+        clearInterval(intervalId);
         setHasFinished(true)
         setHasLost(true)
+        setAlreadyPickedCompounds([])
         //StorageProvider.storage.reset()
-        clearInterval(intervalId);
     }
 
     let onFormulaCompleted = () => {
-        let findUnreachedRemainingLevel = levels.findIndex((level: any) => {
-            return level.status === LevelStatus.UNREACHED
-        })
+        setLevels((prevLevels: any) => {
+            let currentLevels = changeCurrentLevel(prevLevels)
+            let findUnreachedRemainingLevel = prevLevels.findIndex((level: any) => {
+                return level.status === LevelStatus.UNREACHED
+            })
 
-        if(findUnreachedRemainingLevel === -1){
-            setHasFinished(true)
-            clearInterval(intervalId);
-        } else {
-            setLevels((prevLevels: any) => changeCurrentLevel(prevLevels));
-        }
+            if(findUnreachedRemainingLevel === -1){
+                clearInterval(intervalId);
+                setHasFinished(true)
+                setAlreadyPickedCompounds([])
+            }
+            return currentLevels
+        });
+
     }
 
     let onSomeAtomSelected = (atomName: string) => {
@@ -114,11 +117,11 @@ const Game: React.FC = () => {
                 {
                     hasFinished ? (hasLost ? <LostScreen/> : <WonScreen/>):
                         [
-                            <TimeBar time={80000} speed={currentLevel!.speed} onFinish={onFinish} />,
-                            <Formula formula={currentCompound.formula} />,
-                            <Graphic activeComponent={currentCompound} onFormulaCompleted={onFormulaCompleted} currentAtomSelection={currentAtomSelection} onInValidAtom={onInValidAtom} />,
-                            <LevelBar levels={levels} />,
-                            <AtomsBar atomsList={currentCompound.selectionOptions} speed={0} onAtomSelected={onSomeAtomSelected}/>
+                            <TimeBar key={1} time={80000} speed={currentLevel!.speed} onFinish={onFinish} />,
+                            <Formula key={2} formula={currentCompound.formula} />,
+                            <Graphic key={3} activeComponent={currentCompound} onFormulaCompleted={onFormulaCompleted} currentAtomSelection={currentAtomSelection} onInValidAtom={onInValidAtom} />,
+                            <LevelBar key={4} levels={levels} />,
+                            <AtomsBar key={5} atomsList={currentCompound.selectionOptions} speed={0} onAtomSelected={onSomeAtomSelected}/>
                         ]
                 }
             </div>

@@ -7,19 +7,16 @@ const compounds = [
       composition: [
         {
           name: "S",
-          atoms: 1, //TODO: BORRAR property
           electrons: 4,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Cl",
-          atoms: 2,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Cl",
-          atoms: 2,
           electrons: 6,
           status: AtomStatus.UNPLACED
         }
@@ -36,25 +33,21 @@ const compounds = [
       composition:[
         {
           name: "B",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 3,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 3,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 3,
           electrons: 6,
           status: AtomStatus.UNPLACED
         }
@@ -71,19 +64,16 @@ const compounds = [
       composition: [
         {
           name: "Be",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         }
@@ -100,25 +90,21 @@ const compounds = [
       composition:[
         {
           name: "P",
-          atoms: 1,
           electrons: 2,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Br",
-          atoms: 3,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Br",
-          atoms: 3,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Br",
-          atoms: 3,
           electrons: 6,
           status: AtomStatus.UNPLACED
         }
@@ -135,19 +121,16 @@ const compounds = [
       composition: [
         {
           name: "Cl",
-          atoms: 2,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Cl",
-          atoms: 2,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "O",
-          atoms: 1,
           electrons: 4,
           status: AtomStatus.UNPLACED
         }
@@ -164,31 +147,26 @@ const compounds = [
       composition: [
         {
           name: "Xe",
-          atoms: 1,
           electrons: 4,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 4,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 4,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 4,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 4,
           electrons: 6,
           status: AtomStatus.UNPLACED
         }
@@ -205,31 +183,26 @@ const compounds = [
       composition: [
         {
           name: "C",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Cl",
-          atoms: 3,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Cl",
-          atoms: 3,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Cl",
-          atoms: 3,
           electrons: 6,
           status: AtomStatus.UNPLACED
         }
@@ -246,37 +219,31 @@ const compounds = [
       composition: [
         {
           name: "P",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 5,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 5,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 5,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 5,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 5,
           electrons: 6,
           status: AtomStatus.UNPLACED
         }
@@ -293,25 +260,21 @@ const compounds = [
       composition: [
         {
           name: "C",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "C",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Cl",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         }
@@ -328,25 +291,21 @@ const compounds = [
       composition: [
         {
           name: "C",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "O",
-          atoms: 1,
           electrons: 4,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Cl",
-          atoms: 2,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Cl",
-          atoms: 2,
           electrons: 6,
           status: AtomStatus.UNPLACED
         }
@@ -363,31 +322,26 @@ const compounds = [
       composition: [
         {
           name: "C",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 3,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 3,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 3,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Br",
-          atoms: 1,
           electrons: 6,
           status: AtomStatus.UNPLACED
         }
@@ -404,31 +358,26 @@ const compounds = [
       composition: [
         {
           name: "C",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Cl",
-          atoms: 2,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "Cl",
-          atoms: 2,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 2,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 2,
           electrons: 6,
           status: AtomStatus.UNPLACED
         }
@@ -445,43 +394,36 @@ const compounds = [
       composition: [
         {
           name: "S",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 6,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 6,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 6,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 6,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 6,
           electrons: 6,
           status: AtomStatus.UNPLACED
         },
         {
           name: "F",
-          atoms: 6,
           electrons: 6,
           status: AtomStatus.UNPLACED
         }
@@ -498,55 +440,46 @@ const compounds = [
       composition: [
         {
           name: "C",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "C",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "O",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         }
@@ -563,73 +496,61 @@ const compounds = [
       composition: [
         {
           name: "C",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "C",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "C",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "C",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "C",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "C",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         }
@@ -646,49 +567,41 @@ const compounds = [
       composition: [
         {
           name: "C",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "C",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         }
@@ -705,31 +618,26 @@ const compounds = [
       composition: [
         {
           name: "H",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "C",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "O",
-          atoms: 2,
           electrons: 4,
           status: AtomStatus.UNPLACED
         },
         {
           name: "O",
-          atoms: 2,
           electrons: 4,
           status: AtomStatus.UNPLACED
         }
@@ -746,49 +654,41 @@ const compounds = [
       composition: [
         {
           name: "C",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "C",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 4,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 4,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 4,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 4,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "O",
-          atoms: 2,
           electrons: 4,
           status: AtomStatus.UNPLACED
         },
         {
           name: "O",
-          atoms: 2,
           electrons: 4,
           status: AtomStatus.UNPLACED
         }
@@ -805,43 +705,36 @@ const compounds = [
       composition: [
         {
           name: "H",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "S",
-          atoms: 1,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "O",
-          atoms: 4,
           electrons: 4,
           status: AtomStatus.UNPLACED
         },
         {
           name: "O",
-          atoms: 4,
           electrons: 4,
           status: AtomStatus.UNPLACED
         },
         {
           name: "O",
-          atoms: 4,
           electrons: 4,
           status: AtomStatus.UNPLACED
         },
         {
           name: "O",
-          atoms: 4,
           electrons: 4,
           status: AtomStatus.UNPLACED
         }
@@ -858,55 +751,46 @@ const compounds = [
       composition: [
         {
           name: "C",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "C",
-          atoms: 2,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "H",
-          atoms: 6,
           electrons: 0,
           status: AtomStatus.UNPLACED
         },
         {
           name: "O",
-          atoms: 1,
           electrons: 4,
           status: AtomStatus.UNPLACED
         }
