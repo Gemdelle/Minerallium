@@ -10,8 +10,8 @@
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
-    top: 20vh;
-    left: 12vh;
+    top: 15vh;
+    left: 16vh;
 }
 
 .level-bar-container div{
@@ -27,6 +27,7 @@
     background-repeat: no-repeat;
     background-position: center;
     scale: 150% !important;
+    animation: 6s float linear infinite;
 }
 
 .reached {
@@ -34,5 +35,35 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+@keyframes float {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(0deg);
+    }
+
+    20%{
+        transform: rotate(20deg);
+    }
+
+    30% {
+        transform: rotate(-20deg);
+    }
+
+    40% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
 

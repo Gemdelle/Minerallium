@@ -1,6 +1,6 @@
 .formula {
   height: 22vh;
-  width: 27vw;
+  width: 25vw;
   background-image: url(/public/images/formula.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 
   position: relative;
   margin: 0 auto;
-  margin-top: -3.4rem;
+  margin-top: -5.6rem;
 
   display: flex;
   justify-content: center;
@@ -16,8 +16,9 @@
 
 .formula-text {
   display: flex;
-  margin-top: 1.9vw;
-  color: wheat;
-  font-size: larger;
-  height: 50%;
+  margin-top: 3rem;
+  color: rgb(230, 222, 207);
+  font-size: 1.7rem;
+  font-family: 'Old Standard TT', serif;
+  text-shadow: 0vw 0.5vw 0.3vw black;
 }

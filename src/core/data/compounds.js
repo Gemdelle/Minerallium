@@ -12,7 +12,9 @@ const compounds = [
           electrons: 6
         }
       },
-      level: 1
+      level: 1,
+      type: 'liquid-red',
+      state: 'reached-liquid'
     },
     {
       name: "Boron Trifluoride",
@@ -27,7 +29,9 @@ const compounds = [
           electrons: 6
         }
       },
-      level: 1
+      level: 1,
+      type: 'gas-colorless',
+      state: 'reached-gas'
     },
     {
       name: "Beryllium Hydride",
@@ -42,7 +46,9 @@ const compounds = [
           electrons: 0
         }
       },
-      level: 1
+      level: 1,
+      type: 'solid-colorless',
+      state: 'reached-solid'
     },
     {
       name: "Phosphorus Tribromide",
@@ -57,7 +63,9 @@ const compounds = [
           electrons: 6
         }
       },
-      level: 1
+      level: 1,
+      type: 'liquid-colorless',
+      state: 'reached-liquid'
     },
     {
       name: "Chlorine Monoxide",
@@ -72,7 +80,9 @@ const compounds = [
           electrons: 4
         }
       },
-      level: 1
+      level: 1,
+      type: 'gas-yellow',
+      state: 'reached-gas'
     },
     {
       name: "Xenon Tetrafluoride",
@@ -87,7 +97,9 @@ const compounds = [
           electrons: 6
         }
       },
-      level: 1
+      level: 1,
+      type: 'solid-colorless',
+      state: 'reached-solid'
     },
     {
       name: "Chloroform",
@@ -106,7 +118,9 @@ const compounds = [
           electrons: 6
         }
       },
-      level: 2
+      level: 2,
+      type: 'liquid-colorless',
+      state: 'reached-liquid'
     },
     {
       name: "Phosphorus Pentafluoride",
@@ -121,7 +135,9 @@ const compounds = [
           electrons: 6
         }
       },
-      level: 2
+      level: 2,
+      type: 'gas-colorless',
+      state: 'reached-gas'
     },
     {
       name: "Chloroethylene",
@@ -140,7 +156,9 @@ const compounds = [
           electrons: 0
         }
       },
-      level: 2
+      level: 2,
+      type: 'gas-colorless',
+      state: 'reached-gas'
     },
     {
       name: "Cobalt Chloride",
@@ -159,7 +177,9 @@ const compounds = [
           electrons: 6
         }
       },
-      level: 2
+      level: 2,
+      type: 'gas-colorless',
+      state: 'reached-gas'
     },
     {
       name: "Methyl Bromide",
@@ -178,7 +198,9 @@ const compounds = [
           electrons: 6
         }
       },
-      level: 2
+      level: 2,
+      type: 'gas-colorless',
+      state: 'reached-gas'
     },
     {
       name: "Dichlorodifluoromethane",
@@ -197,7 +219,9 @@ const compounds = [
           electrons: 6
         }
       },
-      level: 2
+      level: 2,
+      type: 'gas-colorless',
+      state: 'reached-gas'
     },
     {
       name: "Sulfur Hexafluoride",
@@ -212,7 +236,9 @@ const compounds = [
           electrons: 6
         }
       },
-      level: 3
+      level: 3,
+      type: 'gas-colorless',
+      state: 'reached-gas'
     },
     {
       name: "Dimethyl Ether",
@@ -231,7 +257,9 @@ const compounds = [
           electrons: 0
         }
       },
-      level: 3
+      level: 3,
+      type: 'gas-colorless',
+      state: 'reached-gas'
     },
     {
       name: "Benzene",
@@ -246,7 +274,9 @@ const compounds = [
           electrons: 0
         }
       },
-      level: 3
+      level: 3,
+      type: 'liquid-yellow',
+      state: 'reached-liquid'
     },
     {
       name: "Ethane",
@@ -261,7 +291,9 @@ const compounds = [
           electrons: 0
         }
       },
-      level: 3
+      level: 3,
+      type: 'gas-colorless',
+      state: 'reached-gas'
     },
     {
       name: "Formic Acid",
@@ -280,7 +312,9 @@ const compounds = [
           electrons: 4
         }
       },
-      level: 3
+      level: 3,
+      type: 'liquid-colorless',
+      state: 'reached-liquid'
     },
     {
       name: "Acetic Acid",
@@ -299,7 +333,9 @@ const compounds = [
           electrons: 4
         }
       },
-      level: 3
+      level: 3,
+      type: 'liquid-colorless',
+      state: 'reached-liquid'
     },
     {
       name: "Sulfuric Acid",
@@ -318,7 +354,9 @@ const compounds = [
           electrons: 4
         }
       },
-      level: 3
+      level: 3,
+      type: 'liquid-yellow',
+      state: 'reached-liquid'
     },
     {
       name: "Ethanol",
@@ -337,7 +375,9 @@ const compounds = [
           electrons: 4
         }
       },
-      level: 3
+      level: 3,
+      type: 'liquid-colorless',
+      state: 'reached-liquid'
     }
   ]; 
 

@@ -4,14 +4,14 @@ import "../../styles/components/Graphic.css"
 export default function C2H6({ compound }:any) {
   return (
     <div className='graphic-container C2H6'>
-      <div className='element e1'></div>
-      <div className='element e2'></div>
-      <div className='element e3'></div>
-      <div className='element e4'></div>
-      <div className='element e5'></div>
-      <div className='element e6'></div>
-      <div className='element e7'></div>
-      <div className='element e8'></div>
+      <div className='element C1'>C</div>
+      <div className='element C2'>C</div>
+      <div className='element H1'>H</div>
+      <div className='element H2'>H</div>
+      <div className='element H3'>H</div>
+      <div className='element H4'>H</div>
+      <div className='element H5'>H</div>
+      <div className='element H6'>H</div>
     </div>
   )
 }

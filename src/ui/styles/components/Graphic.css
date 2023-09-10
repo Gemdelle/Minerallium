@@ -18,7 +18,7 @@ img {
   background-size: contain;
   background-position: center;
   right: 7.5vw;
-  bottom: 7vw;
+  bottom: 4vw;
   z-index: -10;
 }
 
@@ -32,6 +32,7 @@ img {
   position: absolute;
   animation: rotate 25s linear infinite;
   opacity: 100%;
+  color: white;
 }
 
 @keyframes rotate {
@@ -43,7 +44,7 @@ img {
   }
 }
 
-.e1 {
+/* .e1 {
   left: 15vw;
   top: 24vw;
 }
@@ -241,602 +242,607 @@ img {
 .e40 {
   left: 10vw;
   top: 35vw;
-}
+} */
 
 /* 01. SCL2 */
 
-.SCL2 .e1 {
+.SCl2 .Cl1 {
   left: 15vw;
   top: 24vw;
 }
 
-.SCL2 .e2 {
+.SCl2 .S1 {
   left: 23.8vw;
   top: 24vw;
 }
 
-.SCL2 .e3 {
+.SCl2 .Cl2 {
   left: 33vw;
   top: 24vw;
 }
 
 /* 02. BF3 */
 
-.BF3 .e1 {
+.BF3 .B1 {
   left: 23.8vw;
   top: 24vw;
 }
-
-.BF3 .e2 {
+.BF3 .F1 {
   left: 23.8vw;
   top: 15vw;
 }
 
-.BF3 .e3 {
+
+.BF3 .F2 {
   left: 16vw;
   top: 30vw;
 }
 
-.BF3 .e4 {
+.BF3 .F3 {
   left: 32vw;
   top: 30vw;
 }
 
 /* 03. BeH2 */
 
-.BeH2 .e1 {
+.BeH2 .Be1 {
+  left: 23.8vw;
+  top: 24vw;
+}
+.BeH2 .H1 {
   left: 15vw;
   top: 24vw;
 }
 
-.BeH2 .e2 {
-  left: 23.8vw;
-  top: 24vw;
-}
 
-.BeH2 .e3 {
+.BeH2 .H2 {
   left: 33vw;
   top: 24vw;
 }
 
 /* 04. PBr3 */
 
-.PBr3 .e1 {
+.PBr3 .P1 {
   left: 23.8vw;
   top: 24vw;
 }
 
-.PBr3 .e2 {
+.PBr3 .Br1 {
   left: 23.8vw;
   top: 15vw;
 }
 
-.PBr3 .e3 {
-  left: 33vw;
-  top: 24vw;
+.PBr3 .Br2 {
+  left: 32vw;
+  top: 30vw;
 }
 
-.PBr3 .e4 {
+.PBr3 .Br3 {
   left: 16vw;
   top: 30vw;
 }
 
 /* 05. Cl2O */
 
-.Cl2O .e1 {
+.Cl2O .Cl1 {
   left: 15vw;
   top: 24vw;
 }
 
-.Cl2O .e2 {
+.Cl2O .O {
   left: 23.8vw;
   top: 24vw;
 }
 
-.Cl2O .e3 {
+.Cl2O .Cl2 {
   left: 33vw;
   top: 24vw;
 }
 
 /* 06. XeF4 */
 
-.Xef4 .e1 {
+.XeF4 .Xe1 {
+  left: 23.8vw;
+  top: 24vw;
+}
+
+.XeF4 .F1 {
   left: 15vw;
   top: 24vw;
 }
-.Xef4 .e2 {
-  left: 23.8vw;
-  top: 24vw;
-}
-.Xef4 .e3 {
+
+.XeF4 .F2 {
   left: 33vw;
   top: 24vw;
 }
-.Xef4 .e4 {
-  left: 23.8vw;
-  top: 15.5vw;
-}
-.Xef4 .e5 {
+
+.XeF4 .F3 {
   left: 23.8vw;
   top: 33vw;
 }
 
+.XeF4 .F4 {
+  left: 23.8vw;
+  top: 15vw;
+}
+
 /* 07. CHCl3 */
 
-.CHCl3 .e1 {
+.CHCl3 .Cl1 {
   left: 15vw;
   top: 24vw;
 }
 
-.CHCl3 .e2 {
+.CHCl3 .C1 {
   left: 23.8vw;
   top: 24vw;
 }
 
-.CHCl3 .e3 {
+.CHCl3 .H1 {
   left: 33vw;
   top: 24vw;
 }
 
-.CHCl3 .e4 {
+.CHCl3 .Cl2 {
   left: 23.8vw;
   top: 15.5vw;
 }
 
-.CHCl3 .e5 {
+.CHCl3 .Cl3 {
   left: 23.8vw;
   top: 33vw;
 }
 
 /* 08. PF5 */
 
-.PF5 .e1 {
+.PF5 .P1 {
   left: 23.8vw;
   top: 24vw;
 }
-.PF5 .e2 {
+.PF5 .F1 {
   left: 23.8vw;
   top: 15.5vw;
 }
 
-.PF5 .e3 {
+.PF5 .F2 {
   left: 15vw;
   top: 22.5vw;
 }
 
-.PF5 .e4 {
+.PF5 .F3 {
   left: 33vw;
   top: 22.5vw;
 }
 
-.PF5 .e5 {
+.PF5 .F4 {
   left: 18.5vw;
   top: 32vw;
 }
-.PF5 .e6 {
+.PF5 .F5 {
   left: 29.5vw;
   top: 32vw;
 }
 
 /* 09. C2HCl */
 
-.C2HCl .e1 {
+.C2HCl .H1 {
   left: 12vw;
   top: 24vw;
 }
 
-.C2HCl .e2 {
+.C2HCl .C1 {
   left: 19.6vw;
   top: 24vw;
 }
 
-.C2HCl .e3 {
+.C2HCl .C2 {
   left: 27.3vw;
   top: 24vw;
 }
 
-.C2HCl .e4 {
+.C2HCl .Cl1 {
   left: 35vw;
   top: 24vw;
 }
 
 /* 10. COCl2 */
 
-.COCl2 .e1{
-  left: 23.8vw;
+.COCl2 .C1 {
+  left: 23.6vw;
   top: 24vw;
 }
-.COCl2 .e2{
-  left: 23.8vw;
+.COCl2 .Cl1 {
+  left: 23.6vw;
   top: 15vw;
 }
 
-.COCl2 .e3{
+.COCl2 .Cl2 {
   left: 16vw;
   top: 30vw;
 }
 
-.COCl2 .e4{
+.COCl2 .O1 {
   left: 32vw;
   top: 30vw;
 }
 
 /* 11. CH3Br */
 
-.CH3Br .e1{
+.CH3Br .H1{
   left: 15vw;
   top: 24vw;
 }
 
-.CH3Br .e2{
+.CH3Br .C1{
   left: 23.8vw;
   top: 24vw;
 }
 
-.CH3Br .e3{
+.CH3Br .H2{
   left: 33vw;
   top: 24vw;
 }
-.CH3Br .e4{
+.CH3Br .H3{
   left: 23.8vw;
   top: 15.5vw;
 }
 
-.CH3Br .e5{
+.CH3Br .Br1{
   left: 23.8vw;
   top: 33vw;
 }
 
 /* 12. CCl2F2 */
 
-.CCl2F2 .e1{
+.CCl2F2 .F1{
   left: 15vw;
   top: 24vw;
 }
 
-.CCl2F2 .e2{
+.CCl2F2 .C1{
   left: 23.8vw;
   top: 24vw;
 }
 
-.CCl2F2 .e3{
+.CCl2F2 .Cl1{
   left: 33vw;
   top: 24vw;
 }  
-.CCl2F2 .e4{
+
+.CCl2F2 .Cl2{
   left: 23.8vw;
   top: 15.5vw; 
 }
 
-.CCl2F2 .e5{
+.CCl2F2 .F2{
   left: 23.8vw;
   top: 33vw;
 }
 
 /* 13. SF6 */
 
-.SF6 .e1{
+.SF6 .F1{
   left: 15vw;
   top: 24vw;
 }
 
-.SF6 .e2{
+.SF6 .S1{
   left: 23.8vw;
   top: 24vw;
 }
 
-.SF6 .e3{
+.SF6 .F2{
   left: 33vw;
   top: 24vw;
 }
 
-.SF6 .e4{
+.SF6 .F3{
   left: 19.5vw;
   top: 16vw;
 }
 
-.SF6 .e5{
+.SF6 .F4{
   left: 19.5vw;
   top: 32vw;
 }
 
-.SF6 .e6{
+.SF6 .F5{
   left: 28.5vw;
   top: 16vw;
 }
-.SF6 .e7{
+
+.SF6 .F6{
   left: 28.5vw;
   top: 32vw;
 }
 
 /* 14. CH3OCH3 */
 
-.CH3OCH3 .e1 {
+.CH3OCH3 .O1 {
   left: 23.8vw;
   top: 24vw;
 }
-.CH3OCH3 .e2 {
+
+.CH3OCH3 .H1 {
   left: 9vw;
   top: 24vw;
 }
-.CH3OCH3 .e3 {
+.CH3OCH3 .C1 {
   left: 16.4vw;
   top: 24vw;
 }
-.CH3OCH3 .e4 {
+.CH3OCH3 .C2 {
   left: 31.2vw;
   top: 24vw;
 }
-.CH3OCH3 .e5 {
+.CH3OCH3 .H2 {
   left: 31.2vw;
   top: 32vw;
 }
-.CH3OCH3 .e6 {
+.CH3OCH3 .H3 {
   left: 16.4vw;
   top: 16vw;
 }
-.CH3OCH3 .e7 {
+.CH3OCH3 .H4 {
   left: 38.6vw;
   top: 24vw;
 }
-.CH3OCH3 .e8 {
+.CH3OCH3 .H5 {
   left: 16.4vw;
   top: 32vw;
 }
-.CH3OCH3 .e9 {
+.CH3OCH3 .H6 {
   left: 31.2vw;
-  top: 16vw
+  top: 16vw;
 }
 
 /* 15. C6H6 */
 
-.C6H6 .e1 {
+.C6H6 .H1 {
+  left: 23.9vw;
+  top: 37.5vw;
+}
+.C6H6 .H2 {
+  left: 38vw;
+  top: 14vw;
+}
+.C6H6 .H3 {
+  left: 38vw;
+  top: 32vw;
+}
+.C6H6 .H4 {
   left: 24vw;
+  top: 11vw;
+}
+.C6H6 .H5 {
+  left: 10vw;
   top: 14vw;
 }
 
-.C6H6 .e2 {
-  left: 38vw;
-  top: 17vw;
-}
-
-.C6H6 .e3 {
-  left: 38vw;
-  top: 35vw;
-}
-
-.C6H6 .e4 {
-  left: 23.9vw;
-  top: 33vw;
-}
-
-.C6H6 .e5 {
-  left: 23.9vw;
-  top: 40.5vw;
-}
-
-.C6H6 .e6 {
-  left: 32vw;
-  top: 23vw;
-}
-
-.C6H6 .e7 {
-  left: 32vw;
-  top: 30vw;
-}
-
-.C6H6 .e8 {
-  left: 32vw;
-  top: 30vw;
-}
-
-.C6H6 .e9 {
-  left: 16vw;
-  top: 30vw;
-}
-
-.C6H6 .e10 {
-  left: 16vw;
-  top: 23vw;
-}
-
-.C6H6 .e11 {
+.C6H6 .H6 {
   left: 10vw;
-  top: 17vw;
-}
-
-.C6H6 .e12 {
-  left: 10vw;
-  top: 35vw;
+  top: 32vw;
 } 
+
+.C6H6 .C1 {
+  left: 16vw;
+  top: 20vw;
+}
+.C6H6 .C2 {
+  left: 32vw;
+  top: 27vw;
+}
+
+.C6H6 .C3 {
+  left: 16vw;
+  top: 27vw;
+}
+
+.C6H6 .C4 {
+  left: 23.9vw;
+  top: 30vw;
+}
+
+.C6H6 .C5{
+  left: 23.9vw;
+  top: 18.2vw;
+}
+
+.C6H6 .C6 {
+  left: 32vw;
+  top: 20vw;
+}
 
 /* 16. C2H6 */
 
-.C2H6 .e1 {
+.C2H6 .C1 {
+  top: 23.4vw;
+  left: 27.3vw;
+}
+
+.C2H6 .C2 {
+  top: 23.4vw;
+  left: 20.2vw;
+}
+
+.C2H6 .H1 {
+  top: 16vw;
+  left: 27.3vw;
+}
+
+.C2H6 .H2 {
   top: 23.4vw;
   left: 13vw;
 }
 
-.C2H6 .e2 {
+.C2H6 .H3 {
   top: 16vw;
   left: 20.2vw;
 }
 
-.C2H6 .e3 {
-  top: 16vw;
-  left: 27.3vw;
-}
-
-.C2H6 .e4 {
-  top: 23.4vw;
-  left: 27.3vw;
-}
-
-.C2H6 .e5 {
-  top: 23.4vw;
-  left: 20.2vw;
-}
-
-.C2H6 .e6 {
+.C2H6 .H4 {
   top: 23.4vw;
   left: 34.4vw;
 }
 
-.C2H6 .e7 {
+.C2H6 .H5 {
   top: 31vw;
   left: 20.2vw;
 }
 
-.C2H6 .e8 {
+.C2H6 .H6 {
   top: 31vw;
   left: 27.3vw;
 }
 
 /* 17. HCOOH */
 
-.HCOOH .e1 {
+.HCOOH .H1 {
   top: 29vw;
   left: 14vw;
 }
 
-.HCOOH .e2 {
+.HCOOH .O1 {
   top: 16vw;
   left: 21.5vw;
 }
 
-.HCOOH .e3 {
+.HCOOH .C1 {
   top: 24vw;
   left: 21.5vw;
 }
 
-.HCOOH .e4 {
+.HCOOH .O2 {
   top: 29vw;
   left: 28.9vw;
 }
 
-.HCOOH .e5 {
+.HCOOH .H2 {
   top: 24vw;
   left: 36.4vw;
 }
 
 /* 18. CH3COOH */
 
-.CH3COOH .e1 {
-  top: 17vw;
-  left: 20.25vw;
+.CH3COOH .H1 {
+  left: 9vw;
+  top: 24vw;
 }
-
-.CH3COOH .e2 {
-  top: 33vw;
-  left: 20.25vw;
+.CH3COOH .C1 {
+  left: 16.4vw;
+  top: 24vw;
 }
-
-.CH3COOH .e3 {
-  top: 25vw;
-  left: 12.5vw;
+.CH3COOH .C2 {
+  left: 23.8vw;
+  top: 24vw;
 }
-
-.CH3COOH .e4 {
-  top: 25vw;
-  left: 35.5vw;
+.CH3COOH .H2 {
+  left: 16.4vw;
+  top: 16vw;
 }
-
-.CH3COOH .e5 {
-  top: 25vw;
-  left: 20.25vw;
+.CH3COOH .H3 {
+  left: 16.4vw;
+  top: 32vw;
 }
-
-.CH3COOH .e6 {
-  top: 17vw;
-  left: 28vw;
+.CH3COOH .H4 {
+  left: 38.6vw;
+  top: 24vw;
 }
-
-.CH3COOH .e7 {
-  top: 25vw;
-  left: 28vw;
+.CH3COOH .O1 {
+  left: 23.8vw;
+  top: 16vw;
+}
+.CH3COOH .O2 {
+  left: 31.2vw;
+  top: 24vw;
+}
+.CH3COOH .H6 {
+  left: 31.2vw;
+  top: 16vw;
 }
 
 /* 19. H2SO4 */
 
-.H2SO4 .e1 {
-  top: 24vw;
+.H2SO4 .H1 {
+  top: 32.2vw;
   left: 15.5vw;
 }
 
-.H2SO4 .e2 {
-  top: 24vw;
-  left: 23.8vw;
-}
-
-.H2SO4 .e3 {
-  top: 24vw;
-  left: 32.3vw;
-}
-
-.H2SO4 .e4 {
-  top: 16vw;
-  left: 23.8vw;
-}
-
-.H2SO4 .e5 {
-  top: 32.2vw;
-  left: 23.8vw;
-}
-
-.H2SO4 .e6 {
+.H2SO4 .H2 {
   top: 16vw;
   left: 32.3vw;
 }
 
-.H2SO4 .e7 {
+.H2SO4 .S1 {
+  top: 24vw;
+  left: 23.8vw;
+}
+
+.H2SO4 .O1 {
+  top: 16vw;
+  left: 23.8vw;
+}
+
+.H2SO4 .O2 {
   top: 32.2vw;
+  left: 23.8vw;
+}
+
+.H2SO4 .O3 {
+  top: 24vw;
+  left: 32.3vw;
+}
+
+.H2SO4 .O4 {
+  top: 24vw;
   left: 15.5vw;
 }
 
 /* 20. CH3CH2OH */
 
-.CH3CH2OH .e1 {
+.CH3CH2OH .H1 {
   top: 24.3vw;
   left: 9vw;
 }
 
-.CH3CH2OH .e2 {
+.CH3CH2OH .C1 {
   top: 24.3vw;
   left: 16.4vw;
 }
 
-.CH3CH2OH .e3 {
+.CH3CH2OH .C2 {
   top: 24.3vw;
   left: 23.7vw;
 }
 
-.CH3CH2OH .e4 {
+.CH3CH2OH .H2 {
   top: 24.3vw;
-  left: 31vw;
+  left: 38.4vw;
 }
 
-.CH3CH2OH .e5 {
+.CH3CH2OH .H3 {
   top: 16.6vw;
   left: 16.4vw;
 }
 
-.CH3CH2OH .e6 {
+.CH3CH2OH .H4 {
   top: 32vw;
   left: 16.4vw;
 }
 
-.CH3CH2OH .e7 {
+.CH3CH2OH .H5 {
   top: 16.6vw;
   left: 23.7vw;
 }
 
-.CH3CH2OH .e8 {
+.CH3CH2OH .H6 {
   top: 32vw;
   left: 23.8vw;
 }
-.CH3CH2OH .e9 {
+
+.CH3CH2OH .O1 {
   top: 24.3vw;
-  left: 38.4vw;
+  left: 31vw;
 }
 
 /* BACKGROUNDS */

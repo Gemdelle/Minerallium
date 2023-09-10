@@ -4,13 +4,13 @@ import "../../styles/components/Graphic.css"
 export default function H2SO4({ compound }:any) {
   return (
     <div className='graphic-container H2SO4'>
-      <div className='element e1'></div>
-      <div className='element e2'></div>
-      <div className='element e3'></div>
-      <div className='element e4'></div>
-      <div className='element e5'></div>
-      <div className='element e6'></div>
-      <div className='element e7'></div>
+      <div className='element H1'>H</div>
+      <div className='element H2'>H</div>
+      <div className='element S1'>S</div>
+      <div className='element O1'>O</div>
+      <div className='element O2'>O</div>
+      <div className='element O3'>O</div>
+      <div className='element O4'>O</div>
     </div>
   )
 }

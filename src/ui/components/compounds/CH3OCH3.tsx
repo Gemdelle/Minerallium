@@ -4,16 +4,15 @@ import "../../styles/components/Graphic.css"
 export default function CH3OCH3({ compound }:any) {
   return (
     <div className='graphic-container CH3OCH3'>
-      <div className='element e2'></div>
-      <div className='element e21'></div>
-      <div className='element e22'></div>
-      <div className='element e23'></div>
-      <div className='element e24'></div>
-      <div className='element e25'></div>
-      <div className='element e26'></div>
-      <div className='element e27'></div>
-      <div className='element e28'></div>
+      <div className='element C1'>C</div>
+      <div className='element H1'>H</div>
+      <div className='element H2'>H</div>
+      <div className='element H3'>H</div>
+      <div className='element O1'>O</div>
+      <div className='element C2'>C</div>
+      <div className='element H4'>H</div>
+      <div className='element H5'>H</div>
+      <div className='element H6'>H</div>
     </div>
-    
   )
 }
