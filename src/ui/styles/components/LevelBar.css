@@ -12,22 +12,34 @@
     position: absolute;
     top: 15vh;
     left: 16vh;
+    scale: 120%;
 }
 
 .level-bar-container div{
     width: 80%;
     height: 7vh;
-    transition: all 500ms ease;
-    scale: 120%;
-}
+    transition: scale 500ms ease;
+    scale: 100%;
+    margin: auto;
+} 
 
 .active {
     background-image: url(/public/images/level-active.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin: auto;
     scale: 150% !important;
     animation: 6s float linear infinite;
+    z-index: 2;
+    position: relative;
+}
+
+.active-sparkle {
+    background-image: url(/public/giphs/sparkle.gif);
+    background-size: 300%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .reached {

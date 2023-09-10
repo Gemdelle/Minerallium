@@ -10,7 +10,11 @@ export default function LevelBar({ levels }: any) {
   return <div className="level-bar-container">
     {
         levels.map((level: any, index: number) => {
-            return (<div key={index} className={`${statusClassNameReferences[level.status]}`}></div>)
+            return (
+                <div key={index} className={level.status == 'ACTIVE' ? 'active-sparkle' : ''}>
+                    <div className={`${statusClassNameReferences[level.status]}`}></div>
+                </div>
+            )
         })
     }
     </div>;
