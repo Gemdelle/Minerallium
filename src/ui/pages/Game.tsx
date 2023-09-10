@@ -49,7 +49,7 @@ const Game: React.FC = () => {
     const [hasLost, setHasLost]: any = useState(false);
     let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
     const [alreadyPickedCompounds, setAlreadyPickedCompounds]: any = useState([]);
-
+/*
    useEffect(() => {
         const interval = setInterval(() => {
             onFormulaCompleted()
@@ -59,7 +59,7 @@ const Game: React.FC = () => {
         return () => clearInterval(interval);
     }, []);
 
-
+*/
     useEffect(() => {
         let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
         let currentLevelCompounds = compounds.filter((compound: any) => compound.level === currentLevel!.compoundLevel)
