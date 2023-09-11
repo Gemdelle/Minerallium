@@ -131,7 +131,7 @@ const Game: React.FC = () => {
                             <Formula key={2} formula={currentCompound.formula} />,
                             <Graphic key={3} activeComponent={currentCompound} onFormulaCompleted={onFormulaCompleted} currentAtomSelection={currentAtomSelection} onInValidAtom={onInValidAtom} />,
                             <LevelBar key={4} levels={levels} alreadyPickedCompounds={alreadyPickedCompounds} />,
-                            <AtomsBar key={5} atomsList={currentCompound.selectionOptions} speed={0} onAtomSelected={onSomeAtomSelected}/>
+                            <AtomsBar key={5} atomsList={currentCompound.selectionOptions} speed={currentLevel!.speed * 1.5} onAtomSelected={onSomeAtomSelected}/>
                         ]
                 }
             </div>

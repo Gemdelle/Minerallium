@@ -13,7 +13,7 @@ export default function AtomsBar({speed, atomsList, onAtomSelected}: {
         return null
 
     return (
-        <Marquee className="atoms-bar" direction='right' speed={100 /* pixel/seg*/}>
+        <Marquee className="atoms-bar" direction='right' speed={speed}>
             {
                 atomsList.map((atom, index) => {
                     return <AtomItem atom={atom} key={index} onAtomSelected={onAtomSelected}/>
