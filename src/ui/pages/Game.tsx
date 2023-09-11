@@ -84,11 +84,11 @@ const Game: React.FC = () => {
     }, [levels]);
 
     let onFinish = () => {
-        clearInterval(intervalId);
-        setHasFinished(true)
-        setHasLost(true)
-        setAlreadyPickedCompounds([])
-        StorageProvider.storage.reset()
+        // clearInterval(intervalId);
+        // setHasFinished(true)
+        // setHasLost(true)
+        // setAlreadyPickedCompounds([])
+        // StorageProvider.storage.reset()
     }
 
     let onFormulaCompleted = () => {

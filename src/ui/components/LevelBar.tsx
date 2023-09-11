@@ -16,6 +16,7 @@ export default function LevelBar({ levels, alreadyPickedCompounds }: any) {
             let stateClass = alreadyPickedCompounds[index] !== undefined ? `${level.status === LevelStatus.ACTIVE ? alreadyPickedCompounds[index].type: alreadyPickedCompounds[index].state}`: ""
             return (
                 <div key={index} className={level.status === LevelStatus.ACTIVE ? 'active-sparkle' : ''}>
+                    <span className={level.status === LevelStatus.ACTIVE ? 'level-bar-active-name' : ''}><p>{alreadyPickedCompounds[index]?.name}</p></span>
                     <div
                         className={`${statusClassNameReferences[level.status]} ${stateClass}`}
                     ></div>
