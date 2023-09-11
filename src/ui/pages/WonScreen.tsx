@@ -10,7 +10,7 @@ export default function WonScreen() {
     const pictureRandomNumber = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
 
     return <div className="finish-screen-container">
-        <img src={`/images/win-sign-${pictureRandomNumber}.png`}/>
+        <img src={`/images/win-sign-${pictureRandomNumber}.webp`}/>
         <Link to={"/"} className={"main-menu"} />
     </div>;
 }

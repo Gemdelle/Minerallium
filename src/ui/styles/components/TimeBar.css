@@ -3,7 +3,7 @@
   height: 5vw;
   margin: 15px auto;
   position: relative;
-  background-image: url(/public/images/time-bar.png);
+  background-image: url(/public/images/time-bar.webp);
   background-size: 100%;
   background-repeat: no-repeat;
 }

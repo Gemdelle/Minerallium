@@ -14,7 +14,7 @@
 }
 
 .main-menu{
-    background-image: url(/public/images/menu-lose.png);
+    background-image: url(/public/images/menu-lose.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -26,5 +26,5 @@
 
 .main-menu:hover{
     scale: 108%;
-    background-image: url(/public/images/menu-lose-hover.png);
+    background-image: url(/public/images/menu-lose-hover.webp);
 }

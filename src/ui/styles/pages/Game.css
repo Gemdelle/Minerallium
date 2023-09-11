@@ -4,6 +4,18 @@
     justify-content: center;
 }
 
+.img-black-background {
+    position: absolute;
+    background-image: url(../../../../public/images/blackbackground.webp);
+    height: 100vh;
+    width: 100vw;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0;
+    bottom: 0;
+}
+
 .looping-video {
     position: absolute;
     top: 0;

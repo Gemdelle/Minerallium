@@ -146,6 +146,7 @@ export default Game;
 const LoopingVideo = ({hasLost}:any) => {
     return (
         <div className={`looping-video ${hasLost ? "lost": ""}`}>
+            <div className='img-black-background'></div>
             <video autoPlay loop muted>
                 <source src={`/videos/background-game.mp4`} type="video/mp4" />
                 Your browser does not support the video tag.

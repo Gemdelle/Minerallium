@@ -7,16 +7,14 @@ export default function TimeBar({time, speed, onFinish}: { time: number, speed: 
     const interval = time / speed;
 
     const soundRef = useRef<any>(null);
-    console.log(soundRef)
+    let timerSound = new PlaySound();
+    soundRef.current = timerSound;
+
     useEffect(() => {
         if(width === 30){
             // Play Sound
-            let timerSound = new PlaySound();
-            timerSound.playTimerSound();
-            soundRef.current = timerSound as any;
-            console.log(soundRef)
+            soundRef.current.playTimerSound();
         }
-
     }, [speed, width])
 
     // Iniciamos el contador cuando se muestra el componente
@@ -48,6 +46,11 @@ export default function TimeBar({time, speed, onFinish}: { time: number, speed: 
 
     useEffect(() => {
         setWidth(100);
+        console.log("STOP HEre?")
+        console.log(timerSound)
+        console.log(soundRef.current)
+        timerSound.pauseTimerSound()
+        soundRef.current.pauseTimerSound()
         return () => {
         };
     }, [interval]);

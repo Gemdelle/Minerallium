@@ -30,7 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;   
-    background-image: url(/public/images/hidden-element.png);
+    background-image: url(/public/images/hidden-element.webp);
     background-size: cover;
     background-position: center;
     filter: sepia(30%);
@@ -221,14 +221,14 @@
     transform: rotateY(-70deg) rotateZ(0deg);
 }
 .Atom-orbit--0 .Atom-electron:before {
-    background: url("/public/images/electron.png");
+    background: url("/public/images/electron.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     filter: sepia(40%);
 }
 .Atom-orbit--0 .Atom-electron:after {
-    background: url("/public/images/electron.png");
+    background: url("/public/images/electron.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -323,14 +323,14 @@
     transform: rotateY(-70deg) rotateZ(60deg);
 }
 .Atom-orbit--1 .Atom-electron:before {
-    background: url("/public/images/electron.png");
+    background: url("/public/images/electron.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     filter: sepia(40%);
 }
 .Atom-orbit--1 .Atom-electron:after {
-    background: url("/public/images/electron.png");
+    background: url("/public/images/electron.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -425,14 +425,14 @@
     transform: rotateY(-70deg) rotateZ(-60deg);
 }
 .Atom-orbit--2 .Atom-electron:before {
-    background: url("/public/images/electron.png");
+    background: url("/public/images/electron.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     filter: sepia(40%);
 }
 .Atom-orbit--2 .Atom-electron:after {
-    background: url("/public/images/electron.png");
+    background: url("/public/images/electron.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -467,14 +467,14 @@
     transform: rotateY(-70deg) rotateZ(-60deg);
 }
 .Atom-orbit--3 .Atom-electron:before {
-    background: url("/public/images/electron.png");
+    background: url("/public/images/electron.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     filter: sepia(40%);
 }
 .Atom-orbit--3 .Atom-electron:after {
-    background: url("/public/images/electron.png");
+    background: url("/public/images/electron.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -512,13 +512,13 @@ animation-delay: 2s;
     transform: rotateY(-70deg) rotateZ(60deg);
 }
 .Atom-orbit--4 .Atom-electron:before {
-    background: url("/public/images/electron.png");
+    background: url("/public/images/electron.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 .Atom-orbit--4 .Atom-electron:after {
-    background: url("/public/images/electron.png");
+    background: url("/public/images/electron.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -553,13 +553,13 @@ animation-delay: 2s;
     transform: rotateY(-70deg) rotateZ(0deg);
 }
 .Atom-orbit--5 .Atom-electron:before {
-    background: url("/public/images/electron.png");
+    background: url("/public/images/electron.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 .Atom-orbit--5 .Atom-electron:after {
-    background: url("/public/images/electron.png");
+    background: url("/public/images/electron.webp");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

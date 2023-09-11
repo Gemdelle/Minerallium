@@ -14,7 +14,7 @@
 }
 
 .main-menu{
-    background-image: url(/public/images/menu-win.png);
+    background-image: url(/public/images/menu-win.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -26,5 +26,5 @@
 
 .main-menu:hover{
     scale: 108%;
-    background-image: url(/public/images/menu-win-hover.png);
+    background-image: url(/public/images/menu-win-hover.webp);
 }

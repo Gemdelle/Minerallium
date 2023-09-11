@@ -10,7 +10,7 @@ export default function LostScreen() {
     const pictureRandomNumber = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
 
     return <div className="finish-screen-container">
-        <img src={`/images/lose-sign-${pictureRandomNumber}.png`}/>
+        <img src={`/images/lose-sign-${pictureRandomNumber}.webp`}/>
         <Link to={"/"} className={"main-menu"} />
     </div>;
 }

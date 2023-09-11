@@ -26,7 +26,7 @@ video {
 .title {
     height: 15vw;
     width: 50vw;
-    background-image: url('/public/images/game-name.png');
+    background-image: url('/public/images/game-name.webp');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;

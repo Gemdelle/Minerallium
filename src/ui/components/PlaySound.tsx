@@ -20,7 +20,7 @@ class PlaySound {
   });
   backgroundSound = new Howl({
     src: ['/sounds/background-music.mp3'],
-    volume: 0.1, 
+    volume: 0.1,
   });
   timerSound = new Howl({
     src: ['/sounds/timer.mp3'],
@@ -44,6 +44,9 @@ class PlaySound {
   };
   playTimerSound = () => {
     this.timerSound.play();
+  };
+  pauseTimerSound = () => {
+    this.timerSound.stop();
   };
 }
 

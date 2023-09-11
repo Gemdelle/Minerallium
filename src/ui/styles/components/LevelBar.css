@@ -5,7 +5,7 @@
     justify-content: space-around;
     flex-direction: column-reverse;
     align-items: center;
-    background-image: url(/public/images/level-bar.png);
+    background-image: url(/public/images/level-bar.webp);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,39 +23,39 @@
 }
 
 .active.gas-colorless{
-    background-image: url(/public/images/gas-colorless.png);
+    background-image: url(/public/images/gas-colorless.webp);
 }
 
 .active.gas-yellow{
-    background-image: url(/public/images/gas-yellow.png);
+    background-image: url(/public/images/gas-yellow.webp);
 }
 
 .active.liquid-red{
-    background-image: url(/public/images/liquid-red.png);
+    background-image: url(/public/images/liquid-red.webp);
 }
 
 .active.liquid-colorless{
-    background-image: url(/public/images/liquid-colorless.png);
+    background-image: url(/public/images/liquid-colorless.webp);
 }
 
 .active.liquid-yellow{
-    background-image: url(/public/images/liquid-yellow.png);
+    background-image: url(/public/images/liquid-yellow.webp);
 }
 
 .active.solid-colorless{
-    background-image: url(/public/images/solid-colorless.png);
+    background-image: url(/public/images/solid-colorless.webp);
 }
 
 .reached.reached-gas{
-    background-image: url(/public/images/reached-gas.png);
+    background-image: url(/public/images/reached-gas.webp);
 }
 
 .reached.reached-liquid{
-    background-image: url(/public/images/reached-liquid.png);
+    background-image: url(/public/images/reached-liquid.webp);
 }
 
 .reached.reached-solid{
-    background-image: url(/public/images/reached-solid.png);
+    background-image: url(/public/images/reached-solid.webp);
 }
 
 .active {
@@ -70,7 +70,7 @@
 }
 
 .active-sparkle {
-    background-image: url(/public/giphs/sparkle.gif);
+    background-image: url(/public/giphs/sparkle.webp);
     background-size: 300%;
     background-repeat: no-repeat;
     background-position: center;

@@ -29,14 +29,14 @@ img {
 }
 
 .element.point::before {
-  background-image: url(/public/images/hidden-element.png);
+  background-image: url(/public/images/hidden-element.webp);
   background-position: center;
   background-size: contain;
 }
 
 .element::before {
   content: "";
-  background-image: url(/public/images/guessing-element.png);
+  background-image: url(/public/images/guessing-element.webp);
   background-position: center;
   background-size: contain;
   border-radius: 50%;
@@ -51,7 +51,7 @@ img {
 
 .element.hide::before {
   content: "";
-  background-image: url(/public/images/hidden-element.png);
+  background-image: url(/public/images/hidden-element.webp);
   background-position: center;
   background-size: contain;
   border-radius: 50%;
@@ -702,83 +702,83 @@ img {
 /* BACKGROUNDS */
 
 .SCl2 {
-  background-image: url("/public/images/1/SCl2.png");
+  background-image: url("/public/images/1/SCl2.webp");
 }
 
 .BF3 {
-  background-image: url("/public/images/1/BF3.png");
+  background-image: url("/public/images/1/BF3.webp");
 }
 
 .BeH2 {
-  background-image: url("/public/images/1/BeH2.png");
+  background-image: url("/public/images/1/BeH2.webp");
 }
 
 .PBr3 {
-  background-image: url("/public/images/1/PBr3.png");
+  background-image: url("/public/images/1/PBr3.webp");
 }
 
 .Cl2O {
-  background-image: url("/public/images/1/Cl2O.png");
+  background-image: url("/public/images/1/Cl2O.webp");
 }
 
 .XeF4 {
-  background-image: url("/public/images/1/XeF4.png");
+  background-image: url("/public/images/1/XeF4.webp");
 }
 
 .CHCl3 {
-  background-image: url("/public/images/2/CHCl3.png");
+  background-image: url("/public/images/2/CHCl3.webp");
 }
 
 .PF5 {
-  background-image: url("/public/images/2/PF5.png");
+  background-image: url("/public/images/2/PF5.webp");
 }
 
 .C2HCl {
-  background-image: url("/public/images/2/C2HCl.png");
+  background-image: url("/public/images/2/C2HCl.webp");
 }
 
 .COCl2 {
-  background-image: url("/public/images/2/COCl2.png");
+  background-image: url("/public/images/2/COCl2.webp");
 }
 
 .CH3Br {
-  background-image: url("/public/images/2/CH3Br.png");
+  background-image: url("/public/images/2/CH3Br.webp");
 }
 
 .CCl2F2 {
-  background-image: url("/public/images/2/CCl2F2.png");
+  background-image: url("/public/images/2/CCl2F2.webp");
 }
 
 .SF6 {
-  background-image: url("/public/images/3/SF6.png");
+  background-image: url("/public/images/3/SF6.webp");
 }
 
 .CH3OCH3 {
-  background-image: url("/public/images/3/CH3OCH3.png");
+  background-image: url("/public/images/3/CH3OCH3.webp");
 }
 
 .C6H6 {
-  background-image: url("/public/images/3/C6H6.png");
+  background-image: url("/public/images/3/C6H6.webp");
 }
 
 .C2H6 {
-  background-image: url("/public/images/3/C2H6.png");
+  background-image: url("/public/images/3/C2H6.webp");
 }
 
 .HCOOH {
-  background-image: url("/public/images/3/HCOOH.png");
+  background-image: url("/public/images/3/HCOOH.webp");
 }
 
 .CH3COOH {
-  background-image: url("/public/images/3/CH3COOH.png");
+  background-image: url("/public/images/3/CH3COOH.webp");
 }
 
 .H2SO4 {
-  background-image: url("/public/images/3/H2SO4.png");
+  background-image: url("/public/images/3/H2SO4.webp");
 }
 
 .CH3CH2OH {
-  background-image: url("/public/images/3/CH3CH2OH.png");
+  background-image: url("/public/images/3/CH3CH2OH.webp");
 }
 
 
