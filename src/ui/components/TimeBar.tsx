@@ -11,7 +11,7 @@ export default function TimeBar({time, speed, onFinish}: { time: number, speed: 
         const timerSound = new PlaySound();
         timerSound.playTimerSound(); 
     
-    }, [])
+    }, [speed])
     
 
 
