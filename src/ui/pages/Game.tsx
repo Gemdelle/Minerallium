@@ -125,16 +125,16 @@ const Game: React.FC = () => {
                         ]
                 }
             </div>
-            <LoopingVideo />
+            <LoopingVideo hasLost={hasFinished && hasLost} />
         </div>
     );
 };
 
 export default Game;
 
-const LoopingVideo: React.FC = () => {
+const LoopingVideo = ({hasLost}:any) => {
     return (
-        <div className="looping-video">
+        <div className={`looping-video ${hasLost ? "lost": ""}`}>
             <video autoPlay loop muted>
                 <source src={`/videos/background-game.mp4`} type="video/mp4" />
                 Your browser does not support the video tag.

@@ -15,6 +15,10 @@
     filter: brightness(70%) contrast(110%);
 }
 
+.looping-video.lost {
+    filter: grayscale(100%);
+}
+
 video {
     object-fit: cover;
     width: 100%;
