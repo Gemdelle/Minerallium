@@ -1,5 +1,5 @@
 import React from "react";
-import '../styles/pages/LostScreen.css';
+import '../styles/pages/WonScreen.css';
 import PlaySound from "../components/PlaySound";
 import {Link} from "react-router-dom";
 

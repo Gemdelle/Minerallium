@@ -7,7 +7,7 @@
 }
 
 .Atom {
-    width: 80px;
+    width: 0px;
     height: 80px;
     position: relative;
     border-radius: 50%;
@@ -15,32 +15,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
 }
 
 .Atom-nucleus,
 .Atom-nucleus:before {
     position: absolute;
-    background: #FCF1F3;
 }
 
 .Atom-nucleus {
-    width: 4vh;
-    height: 4vh;
+    width: 10vh;
+    height: 10vh;
     border-radius: 50%;
-    box-shadow: 0 0 1vh 0.5vh #000000;
     z-index: 2;
     display: flex;
     justify-content: center;
-    align-items: center;
-   
+    align-items: center;   
+    background-image: url(/public/images/hidden-element.png);
+    background-size: cover;
+    background-position: center;
+    filter: sepia(30%);
+
+    color: rgb(59, 36, 36);
+    font-size: 1.7rem;
+    font-family: 'Old Standard TT', serif;
+    text-shadow: 0vw 0.3vw 0.4vw black;
+    font-weight: 600;
 }
 
 .Atom-nucleus:before {
     display: block;
     content: "";
-    width: 6vh;
-    height: 6vh;
+    width: 8vh;
+    height: 8vh;
     border-radius: 50%;
     opacity: 0.1;
 }
@@ -53,14 +59,10 @@
     transform-style: preserve-3d;
 }
 
-.Atom-orbit--visible {
-    border-radius: 50%;
-    border-color: white;
-}
-
 .Atom-electron {
     transform-style: preserve-3d;
 }
+
 .Atom-electron:before {
     display: block;
     content: "";
@@ -223,6 +225,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    filter: sepia(40%);
 }
 .Atom-orbit--0 .Atom-electron:after {
     background: url("/public/images/electron.png");
@@ -230,6 +233,7 @@
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 5px 0px #fad161;
+    filter: sepia(40%);
 }
 
 .Atom-orbit--1.Atom-orbit--visible {
@@ -323,6 +327,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    filter: sepia(40%);
 }
 .Atom-orbit--1 .Atom-electron:after {
     background: url("/public/images/electron.png");
@@ -330,6 +335,7 @@
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 5px 0px #69ee75;
+    filter: sepia(40%);
 }
 
 .Atom-orbit--2.Atom-orbit--visible {
@@ -423,6 +429,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    filter: sepia(40%);
 }
 .Atom-orbit--2 .Atom-electron:after {
     background: url("/public/images/electron.png");
@@ -430,6 +437,7 @@
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 5px 0px #992dd8;
+    filter: sepia(40%);
 }
 
 .Atom-orbit--3.Atom-orbit--visible {
@@ -463,6 +471,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    filter: sepia(40%);
 }
 .Atom-orbit--3 .Atom-electron:after {
     background: url("/public/images/electron.png");
@@ -470,6 +479,7 @@
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 5px 0px #992dd8;
+    filter: sepia(40%);
 }
 
 /*

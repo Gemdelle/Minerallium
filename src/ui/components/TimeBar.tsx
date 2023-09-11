@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useRef} from 'react'
 import "../styles/components/TimeBar.css"
 import PlaySound from "./PlaySound"
 
@@ -6,14 +6,18 @@ export default function TimeBar({time, speed, onFinish}: { time: number, speed: 
     const [width, setWidth] = useState(100);
     const interval = time / speed;
 
+    const soundRef = useRef<any>(null);
+    console.log(soundRef)
     useEffect(() => {
-        // Play Sound
-        const timerSound = new PlaySound();
-        timerSound.playTimerSound(); 
-    
-    }, [speed])
-    
+        if(width === 30){
+            // Play Sound
+            let timerSound = new PlaySound();
+            timerSound.playTimerSound();
+            soundRef.current = timerSound as any;
+            console.log(soundRef)
+        }
 
+    }, [speed, width])
 
     // Iniciamos el contador cuando se muestra el componente
     useEffect(() => {
@@ -27,7 +31,6 @@ export default function TimeBar({time, speed, onFinish}: { time: number, speed: 
                     // setTimeout para compensar el delay de la anim. de css fluidez
                     setTimeout(() => {
                         onFinish()
-                        // alert("TERMINO EL TIEMPO")-
                     }, 200)
 
                 } else {

@@ -62,6 +62,12 @@ const Game: React.FC = () => {
 
 
     useEffect(() => {
+        // Play sound
+        const backgroundSound = new PlaySound();
+        backgroundSound.playBackgroundSound();
+    },[])
+
+    useEffect(() => {
         let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
         let currentLevelCompounds = compounds.filter((compound: any) => compound.level === currentLevel!.compoundLevel)
         let randomCompound: any
@@ -83,7 +89,7 @@ const Game: React.FC = () => {
         setHasFinished(true)
         setHasLost(true)
         setAlreadyPickedCompounds([])
-        //StorageProvider.storage.reset()
+        StorageProvider.storage.reset()
     }
 
     let onFormulaCompleted = () => {

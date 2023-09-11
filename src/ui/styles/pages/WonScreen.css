@@ -10,6 +10,7 @@
 .finish-screen-container img {
     height: 20vh;
     width: 40vh;
+    position: absolute;
 }
 
 .main-menu{
@@ -17,6 +18,13 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 20vh;
-    height: 6vh;
+    width: 27vh;
+    height: 10vh;
+    margin-top: 20vw;
+    transition: all 400ms ease-in-out;
+}
+
+.main-menu:hover{
+    scale: 108%;
+    background-image: url(/public/images/menu-win-hover.png);
 }
