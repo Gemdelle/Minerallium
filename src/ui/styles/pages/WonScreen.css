@@ -4,9 +4,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .finish-screen-container img {
     height: 20vh;
     width: 40vh;
+}
+
+.main-menu{
+    background-image: url(/public/images/menu-win.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20vh;
+    height: 6vh;
 }
