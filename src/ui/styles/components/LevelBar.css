@@ -16,22 +16,21 @@
 
 .level-bar-active-name {
     position: absolute;
-    display: block !important;
-    top: -20px;
-    left: 30px;
-    width: 300px;
-    height: 100px;
+    top: -50px;
+    left: 15px;
+    width: 350px;
+    height: 150px;
     background-image: url(../../../../public/images/compound-name.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     color: white;
     font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
 }
 .level-bar-active-name p {
-    margin: 35px 0 0 55px;
+    display: flex;
+    margin: auto;
 }
 
 .level-bar-container span {
