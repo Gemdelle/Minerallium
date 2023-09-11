@@ -1,9 +1,14 @@
 import {useState, useEffect} from 'react'
 import "../styles/components/TimeBar.css"
+import PlaySound from "./PlaySound"
 
 export default function TimeBar({time, speed, onFinish}: { time: number, speed: number, onFinish: () => void }) {
     const [width, setWidth] = useState(100);
     const interval = time / speed;
+
+    // Play Sound
+    // const timerSound = new PlaySound();
+    // timerSound.playTimerSound(); 
 
     // Iniciamos el contador cuando se muestra el componente
     useEffect(() => {

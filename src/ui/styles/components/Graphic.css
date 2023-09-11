@@ -29,14 +29,14 @@ img {
 }
 
 .element.point::before {
-  background-image: url(/public/images/guessing-element.png);
+  background-image: url(/public/images/hidden-element.png);
   background-position: center;
   background-size: contain;
 }
 
 .element::before {
   content: "";
-  background-image: url(/public/images/hidden-element.png);
+  background-image: url(/public/images/guessing-element.png);
   background-position: center;
   background-size: contain;
   border-radius: 50%;

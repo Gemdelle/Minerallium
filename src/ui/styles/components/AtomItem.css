@@ -18,6 +18,7 @@
   text-shadow: 0vw 0.5vw 0.3vw black;
 
   transition: all 400ms;
+  cursor: pointer;
 }
 
 .atom:hover {

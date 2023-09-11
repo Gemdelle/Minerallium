@@ -10,6 +10,7 @@ import LevelStatus from "../../core/levels/LevelStatus";
 import StorageProvider from "../../core/StorageProvider";
 import LostScreen from "./LostScreen";
 import WonScreen from "./WonScreen";
+import PlaySound from "../components/PlaySound"
 
 
 const changeCurrentLevel : any = (previousLevels: any) => {
@@ -107,6 +108,10 @@ const Game: React.FC = () => {
     }
 
     let onInValidAtom = () => {
+        // Play sound
+        const badSound = new PlaySound();
+        badSound.playIncorrectSound();
+        
         console.log("INVALID")
     }
 
