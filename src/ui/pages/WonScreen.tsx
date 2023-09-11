@@ -6,8 +6,9 @@ export default function WonScreen() {
     // Play Sound
     const winSound = new PlaySound();
     winSound.playWinSound();
+    const pictureRandomNumber = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
 
     return <div className="finish-screen-container">
-        <img src={"http://www.quickmeme.com/img/f3/f36a86a02993461bcc1cf30af2bd63729e95a48cffd7d5593950c189a73f4ce9.jpg"}/>
+        <img src={`/images/win-sign-${pictureRandomNumber}.png`}/>
     </div>;
 }
