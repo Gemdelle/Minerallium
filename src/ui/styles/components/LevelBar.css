@@ -20,10 +20,45 @@
     transition: scale 500ms ease;
     scale: 110%;
     margin: auto;
-} 
+}
+
+.active.gas-colorless{
+    background-image: url(/public/images/gas-colorless.png);
+}
+
+.active.gas-yellow{
+    background-image: url(/public/images/gas-yellow.png);
+}
+
+.active.liquid-red{
+    background-image: url(/public/images/liquid-red.png);
+}
+
+.active.liquid-colorless{
+    background-image: url(/public/images/liquid-colorless.png);
+}
+
+.active.liquid-yellow{
+    background-image: url(/public/images/liquid-yellow.png);
+}
+
+.active.solid-colorless{
+    background-image: url(/public/images/solid-colorless.png);
+}
+
+.reached.reached-gas{
+    background-image: url(/public/images/reached-gas.png);
+}
+
+.reached.reached-liquid{
+    background-image: url(/public/images/reached-liquid.png);
+}
+
+.reached.reached-solid{
+    background-image: url(/public/images/reached-solid.png);
+}
 
 .active {
-    background-image: url(/public/images/level-active.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -42,11 +77,12 @@
 }
 
 .reached {
-    background-image: url(/public/images/level-inactive.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
 
 @keyframes float {
     0% {

@@ -50,7 +50,7 @@ const Game: React.FC = () => {
     const [hasLost, setHasLost]: any = useState(false);
     let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
     const [alreadyPickedCompounds, setAlreadyPickedCompounds]: any = useState([]);
-/*
+
    useEffect(() => {
         const interval = setInterval(() => {
             onFormulaCompleted()
@@ -60,24 +60,25 @@ const Game: React.FC = () => {
         return () => clearInterval(interval);
     }, []);
 
-*/
+
     useEffect(() => {
         let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
         let currentLevelCompounds = compounds.filter((compound: any) => compound.level === currentLevel!.compoundLevel)
         let randomCompound: any
         do {
             randomCompound = getRandomCompoundFrom(currentLevelCompounds);
-            let foundComponent = alreadyPickedCompounds.findIndex((componentFormula:any) => componentFormula === randomCompound.formula)
+            let foundComponent = alreadyPickedCompounds.findIndex((componentFormula:any) => componentFormula.formula === randomCompound.formula)
             if (foundComponent !== -1) {
                 randomCompound = undefined
             }
         } while (randomCompound === undefined);
         setCurrentCompound(randomCompound)
-        setAlreadyPickedCompounds([...alreadyPickedCompounds, randomCompound.formula])
+        setAlreadyPickedCompounds([...alreadyPickedCompounds, randomCompound])
         return () => {};
     }, [levels]);
 
     let onFinish = () => {
+
         clearInterval(intervalId);
         setHasFinished(true)
         setHasLost(true)
@@ -99,7 +100,6 @@ const Game: React.FC = () => {
             }
             return currentLevels
         });
-
     }
 
     let onSomeAtomSelected = (atomName: string) => {
@@ -118,14 +118,13 @@ const Game: React.FC = () => {
     return (
         <div className="home-container">
             <div>
-
                 {
                     hasFinished ? (hasLost ? <LostScreen/> : <WonScreen/>):
                         [
                             <TimeBar key={1} time={80000} speed={currentLevel!.speed} onFinish={onFinish} />,
                             <Formula key={2} formula={currentCompound.formula} />,
                             <Graphic key={3} activeComponent={currentCompound} onFormulaCompleted={onFormulaCompleted} currentAtomSelection={currentAtomSelection} onInValidAtom={onInValidAtom} />,
-                            <LevelBar key={4} levels={levels} />,
+                            <LevelBar key={4} levels={levels} alreadyPickedCompounds={alreadyPickedCompounds} />,
                             <AtomsBar key={5} atomsList={currentCompound.selectionOptions} speed={0} onAtomSelected={onSomeAtomSelected}/>
                         ]
                 }
