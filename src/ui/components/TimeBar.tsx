@@ -6,9 +6,14 @@ export default function TimeBar({time, speed, onFinish}: { time: number, speed: 
     const [width, setWidth] = useState(100);
     const interval = time / speed;
 
-    // Play Sound
-    // const timerSound = new PlaySound();
-    // timerSound.playTimerSound(); 
+    useEffect(() => {
+        // Play Sound
+        const timerSound = new PlaySound();
+        timerSound.playTimerSound(); 
+    
+    }, [])
+    
+
 
     // Iniciamos el contador cuando se muestra el componente
     useEffect(() => {
