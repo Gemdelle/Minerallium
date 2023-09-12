@@ -26,7 +26,6 @@ export default function Compound({compound, currentAtomSelection, onFormulaCompl
     const [currentAtoms, setCurrentAtoms]: any[] = useState([]);
     const [currentPointer, setCurrentPointer]: any[] = useState({});
 
-
     useEffect(() => {
         let atomsGroupByName: any = agruparPorPropiedad(compound.composition)
         setCurrentAtoms(atomsGroupByName)

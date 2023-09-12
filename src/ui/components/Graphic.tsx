@@ -11,7 +11,7 @@ export default function Graphic({ activeComponent, onFormulaCompleted, onInValid
           compound={activeComponent}
           onFormulaCompleted={onFormulaCompleted}
           onInValidAtom={onInValidAtom}
-          currentAtomSelection={currentAtomSelection}/>
+          currentAtomSelection={currentAtomSelection} />
     </div>
   )
 }

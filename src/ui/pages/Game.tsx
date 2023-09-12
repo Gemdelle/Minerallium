@@ -51,21 +51,21 @@ const Game: React.FC = () => {
     let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
     const [alreadyPickedCompounds, setAlreadyPickedCompounds]: any = useState([]);
 
-   useEffect(() => {
-        const interval = setInterval(() => {
-            onFormulaCompleted()
-        }, 3000);
-        setIntervalId(interval);
+//    useEffect(() => {
+//         const interval = setInterval(() => {
+//             onFormulaCompleted()
+//         }, 3000);
+//         setIntervalId(interval);
 
-        return () => clearInterval(interval);
-    }, []);
+//         return () => clearInterval(interval);
+//     }, []);
 
-
-    useEffect(() => {
-        // Play sound
-        const backgroundSound = new PlaySound();
-        backgroundSound.playBackgroundSound();
-    },[])
+    
+    // useEffect(() => {
+    //     // Play sound
+    //     const backgroundSound = new PlaySound();
+    //     backgroundSound.playBackgroundSound();
+    // },[])
 
     useEffect(() => {
         let currentLevel = levels.find((level: any) => level.status === LevelStatus.ACTIVE)
@@ -84,11 +84,11 @@ const Game: React.FC = () => {
     }, [levels]);
 
     let onFinish = () => {
-        // clearInterval(intervalId);
-        // setHasFinished(true)
-        // setHasLost(true)
-        // setAlreadyPickedCompounds([])
-        // StorageProvider.storage.reset()
+        clearInterval(intervalId);
+        setHasFinished(true)
+        setHasLost(true)
+        setAlreadyPickedCompounds([])
+        StorageProvider.storage.reset()
     }
 
     let onFormulaCompleted = () => {
@@ -115,9 +115,9 @@ const Game: React.FC = () => {
     }
 
     let onInValidAtom = () => {
-        // Play sound
-        const badSound = new PlaySound();
-        badSound.playIncorrectSound();
+        // // Play sound
+        // const badSound = new PlaySound();
+        // badSound.playIncorrectSound();
         
         console.log("INVALID")
     }

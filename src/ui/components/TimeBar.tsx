@@ -6,14 +6,14 @@ export default function TimeBar({time, speed, onFinish}: { time: number, speed: 
     const [width, setWidth] = useState(100);
     const interval = time / speed;
 
-    const soundRef = useRef<any>(null);
-    let timerSound = new PlaySound();
-    soundRef.current = timerSound;
+    // const soundRef = useRef<any>(null);
+    // let timerSound = new PlaySound();
+    // soundRef.current = timerSound;
 
     useEffect(() => {
         if(width === 30){
             // Play Sound
-            soundRef.current.playTimerSound();
+            // soundRef.current.playTimerSound();
         }
     }, [speed, width])
 
@@ -46,11 +46,6 @@ export default function TimeBar({time, speed, onFinish}: { time: number, speed: 
 
     useEffect(() => {
         setWidth(100);
-        console.log("STOP HEre?")
-        console.log(timerSound)
-        console.log(soundRef.current)
-        timerSound.pauseTimerSound()
-        soundRef.current.pauseTimerSound()
         return () => {
         };
     }, [interval]);

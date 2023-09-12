@@ -14,10 +14,11 @@
     left: 16vh;
 }
 
+/* Esto es el div contenedor con el background */
 .level-bar-active-name {
     position: absolute;
     top: -50px;
-    left: 15px;
+    left: -10px;
     width: 350px;
     height: 150px;
     background-image: url(../../../../public/images/compound-name.png);
@@ -25,12 +26,19 @@
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    font-size: 1rem;
+    color: rgb(230, 222, 207);
+    font-size: .9rem;
+    font-style: italic;
+    text-shadow: 0vw 0.5vw 0.3vw black;
+    font-family: 'Old Standard TT', serif;
     display: flex !important;
 }
+
+/* Esto es el p que tiene el texto */
 .level-bar-active-name p {
     display: flex;
-    margin: auto;
+    /* margin: auto; */
+    margin: 65px 0 0 95px;
 }
 
 .level-bar-container span {
