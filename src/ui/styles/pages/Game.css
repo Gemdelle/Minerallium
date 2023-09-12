@@ -1,6 +1,6 @@
 html {
-    cursor: url('../../../../public/images/science-cursor.cur'), pointer;
-    cursor: url('../../../../public/images/pointer.cur'), pointer;
+    cursor: url('../../../../public/images/science-cursor.cur'), auto;
+
 }
 
 .atom-container {
