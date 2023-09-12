@@ -99,21 +99,19 @@ const Game: React.FC = () => {
     }
 
     let onFormulaCompleted = () => {
-        setTimeout(() => {
-            setLevels((prevLevels: any) => {
-                let currentLevels = changeCurrentLevel(prevLevels)
-                let findUnreachedRemainingLevel = prevLevels.findIndex((level: any) => {
-                    return level.status === LevelStatus.UNREACHED
-                })
+        setLevels((prevLevels: any) => {
+            let currentLevels = changeCurrentLevel(prevLevels)
+            let findUnreachedRemainingLevel = prevLevels.findIndex((level: any) => {
+                return level.status === LevelStatus.UNREACHED
+            })
 
-                if(findUnreachedRemainingLevel === -1){
-                    clearInterval(intervalId);
-                    setHasFinished(true)
-                    setAlreadyPickedCompounds([])
-                }
-                return currentLevels
-            });
-        }, 500)
+            if(findUnreachedRemainingLevel === -1){
+                clearInterval(intervalId);
+                setHasFinished(true)
+                setAlreadyPickedCompounds([])
+            }
+            return currentLevels
+        });
     }
 
     let onSomeAtomSelected = (atomName: string) => {
