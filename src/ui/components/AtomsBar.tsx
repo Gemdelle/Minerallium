@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react'
 import Marquee from "react-fast-marquee";
 import "../styles/components/AtomsBar.css"
 
@@ -9,8 +9,7 @@ export default function AtomsBar({speed, atomsList, onAtomSelected}: {
     atomsList: [],
     onAtomSelected: any
 }) {
-    if (!atomsList || atomsList.length === 0)
-        return null
+    if (!atomsList || atomsList.length === 0) return null;
 
     return (
         <Marquee className="atoms-bar" direction='right' speed={speed}>

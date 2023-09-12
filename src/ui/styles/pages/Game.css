@@ -1,3 +1,8 @@
+html {
+    cursor: url('../../../../public/images/science-cursor.cur'), pointer;
+    cursor: url('../../../../public/images/pointer.cur'), pointer;
+}
+
 .atom-container {
     width: 100%;
     display: flex;

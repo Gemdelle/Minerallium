@@ -62,12 +62,6 @@ const Game: React.FC = () => {
 */
 
     useEffect(() => {
-        // Play sound
-        sounds.playBackgroundSound();
-        return () => {};
-    },[])
-
-    useEffect(() => {
         Provider.reset()
         setCurrentCompound({});
         setCurrentAtomSelection(null)
