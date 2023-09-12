@@ -117,6 +117,11 @@ const Game: React.FC = () => {
     let onSomeAtomSelected = (atomName: string) => {
         setCurrentAtomSelection(atomName)
         setTimeout(() => { setCurrentAtomSelection(null)}, 0)
+        setCurrentCompound((prevCompound: any)=> {
+            let shuffledOptions = currentCompound.selectionOptions.sort( ()=> Math.random()-0.5 )
+            return {...prevCompound, selectionOptions: shuffledOptions}
+        })
+
     }
 
     let onInValidAtom = () => {
