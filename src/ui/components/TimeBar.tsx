@@ -1,14 +1,14 @@
 import {useState, useEffect, useRef} from 'react'
 import "../styles/components/TimeBar.css"
-import PlaySound from "./PlaySound"
+import Provider from "../../core/Provider";
 
 export default function TimeBar({time, speed, onFinish}: { time: number, speed: number, onFinish: () => void }) {
     const [width, setWidth] = useState(100);
     const interval = time / speed;
 
-    // const soundRef = useRef<any>(null);
-    // let timerSound = new PlaySound();
-    // soundRef.current = timerSound;
+    const soundRef = useRef<any>(null);
+    let timerSound = Provider.sounds;
+    soundRef.current = timerSound;
 
     useEffect(() => {
         if(width === 30){

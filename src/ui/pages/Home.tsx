@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 import '../styles/pages/Home.css';
+import Provider from "../../core/Provider";
 
 
 const Home: React.FC = () => {
+    Provider.sounds.pauseAllSounds()
     return (
         <div className='home-container'>
             <div className='options'>

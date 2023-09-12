@@ -3,7 +3,7 @@ import "../styles/components/Graphic.css"
 import Atom from "./Atom";
 import arraysAreEqual from "../../core/utils/arraysUtils";
 import AtomStatus from "../../core/atoms/AtomStatus";
-import PlaySound from "./PlaySound"
+import Provider from "../../core/Provider";
 
 function agruparPorPropiedad(arr: any[]): any[][] {
     const resultado: { [key: string]: any[] } = {};
@@ -64,8 +64,7 @@ export default function Compound({compound, currentAtomSelection, onFormulaCompl
             setCurrentSequence([...currentSequence,currentPointer.name])
             
             // Play sound
-            const correctSound = new PlaySound();
-            correctSound.playCorrectSound();
+            Provider.sounds.playCorrectSound()
            
 
             let nextPointer = compound.composition.find((composition:any)=> {

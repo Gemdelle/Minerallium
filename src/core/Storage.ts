@@ -9,12 +9,6 @@ class Storage {
         this.compoundsState = [...compounds]
         this.levelsState = [...levelsConfig]
     }
-
-
-    reset() {
-        this.compoundsState = [...compounds]
-        this.levelsState = [...levelsConfig]
-    }
 }
 
 export default Storage
